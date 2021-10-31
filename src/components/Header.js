@@ -26,13 +26,18 @@ const Header = () => {
 
     return (
         <>
-            <header className="flex justify-between p-4">
-                <Link className="text-3xl md:text-5xl" to="/">
-                    Logo
+            <header className="flex justify-between p-6">
+                <Link className="text-2xl md:text-5xl" to="/" title="Return to Just Andy home page">
+                    Just Andy
                 </Link>
-
-                {/** Desktop Navigation */}
-                <nav className="flex items-center justify-end invisible md:visible">
+                {/** Mobile Navigation */}
+                <div className="flex items-center md:hidden">
+                    <button onClick={toggleNav} type="button">
+                        {isOpen === true ? 'Close' : 'Menu'}
+                    </button>
+                </div>
+                                {/** Desktop Navigation */}
+                                <nav className="hidden lg:flex items-center justify-end invisible md:visible">
                     <ul className="header-nav">
                         {menuData.site.siteMetadata.menuLinks.map((menu, index) => (
                             <li key={index} className="mr-4">
@@ -43,12 +48,6 @@ const Header = () => {
                         ))}
                     </ul>
                 </nav>
-                {/** Mobile Navigation */}
-                <div className="flex items-center md:hidden">
-                    <button onClick={toggleNav} type="button">
-                        {isOpen === true ? 'Close' : 'Menu'}
-                    </button>
-                </div>
                 <MobileNav value={isOpen} updateNav={toggleNav} menuData={menuData.site.siteMetadata.menuLinks} />
             </header>
         </>

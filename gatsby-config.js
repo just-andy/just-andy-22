@@ -1,8 +1,8 @@
 module.exports = {
     siteMetadata: {
-        title: '<Whitelabel>',
-        titleTemplate: '%s · <Whitelabel>',
-        description: 'A portfolio work by Edinburgh based, product designer Andrew Cetnarskyj.',
+        title: 'Andrew Cetnarskyj Portfolio',
+        titleTemplate: '%s · Andrew Cetnrskyj Portfolio',
+        description: 'A portfolio work by Edinburgh based, product designer and design system builder Andrew Cetnarskyj.',
         siteUrl: 'https://andrewcetnarskyj.co.uk', // No trailing slash allowed!
         image: '/images/banner.jpg', // Path to your image you placed in the 'static' folder
         twitterUsername: '@justandydesign1',
@@ -12,13 +12,13 @@ module.exports = {
                 url:'/'
             },
             {
-                label:'Articles',
-                url:'/articles'
-            },
-            {
                 label:'Projects',
                 url:'/projects'
-            }
+            },
+            {
+              label:'About',
+              url:'/about'
+          },
         ],
         social: [
             {
@@ -62,22 +62,21 @@ module.exports = {
                   maxWidth: 1024,
                 },
               },
-              `gatsby-remark-prismjs`,
-          {
-            resolve: `gatsby-remark-images`,
-            options: {
-              maxWidth: 1024
-            }
-          },
-          `gatsby-remark-prismjs`
+              `gatsby-remark-prismjs`
         ]
       }
     },
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
+        name: `Just Andy`,
+        short_name: `Just Andy`,
+        start_url: `/`,
+        background_color: `#E34849`,
+        theme_color: `#a2466c`,
+        display: `standalone`,
         icon: `src/images/favicon.png`
-      }
+      },
     },
     {
       resolve: `gatsby-source-filesystem`,
