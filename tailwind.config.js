@@ -7,7 +7,8 @@ module.exports = {
   theme: {
     fontFamily: {
       display: ['Helvetica,"Helvetica Neue",Arial,"Lucida Grande",sans-serif'],
-      body: ['Helvetica,"Helvetica Neue",Arial,"Lucida Grande",sans-serif'],
+      body: ['Poppins, Helvetica,"Helvetica Neue",Arial,"Lucida Grande",sans-serif'],
+      header: ['Poppins, Helvetica, "Helvetica Neue",Arial,"Lucida Grande",sans-serif']
     },
     colors: {
       primary: colors.sky,
@@ -15,11 +16,26 @@ module.exports = {
       gray: colors.coolGray,
       white: colors.white,
       positive: colors.green,
-      negative: colors.red
+      negative: colors.red,
     },
     container: {
       center: true,
       padding: '1rem',
+    },
+    extend: {
+      typography: (theme) => ({
+        DEFAULT: {
+          css: {
+            fontFamily: 'Poppins, Helvetica, sans-serif',
+            a: {
+              color: theme('colors.primary'),
+              '&:hover': {
+                color: theme('colors.primary.700'),
+              },
+            },
+          }
+        }
+      }),
     },
     screens: {
       sm: "640px",
