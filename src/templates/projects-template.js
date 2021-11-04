@@ -30,7 +30,6 @@ const ProjectsTemplate = ({
     `);
     const navArray = sideNav.allMdx.edges;
     return (
-        <section className="flex flex-wrap overflow-hidden">
             <article className="prose lg:prose-lg">
                 <div className="flex my-2 text-s">
                     <Link to="/" title="Return to the homepage">Home</Link>&nbsp;/&nbsp;<Link to="/projects" title="View all projects">Projects</Link>
@@ -51,7 +50,6 @@ const ProjectsTemplate = ({
                         : null}
                 </div>
             </article>
-        </section>
     );
 };
 

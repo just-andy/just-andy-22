@@ -2,8 +2,7 @@
 import React from 'react';
 import Layout from './src/components/Layout';
 import './src/styles/global.css';
-import "@fontsource/poppins/700.css"
-import "@fontsource/poppins/400.css"
+import "@fontsource/ostrich-sans/900.css"
 require("prismjs/themes/prism-dark.css")
 
 export function wrapPageElement({ element, props }) {

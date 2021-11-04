@@ -6,9 +6,8 @@ module.exports = {
   darkMode: false, // or 'media' or 'class'
   theme: {
     fontFamily: {
-      display: ['Helvetica,"Helvetica Neue",Arial,"Lucida Grande",sans-serif'],
-      body: ['Poppins, Helvetica,"Helvetica Neue",Arial,"Lucida Grande",sans-serif'],
-      header: ['Poppins, Helvetica, "Helvetica Neue",Arial,"Lucida Grande",sans-serif']
+      body: ['Helvetica,"Helvetica Neue",Arial,"Lucida Grande",sans-serif'],
+      header: ['Ostrich Sans, "Helvetica Neue",  Helvetica, Arial,"Lucida Grande",sans-serif']
     },
     colors: {
       primary: colors.sky,
