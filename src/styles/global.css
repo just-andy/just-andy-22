@@ -6,7 +6,7 @@
 /** Headings **/
 @layer base {
   h1 {
-    @apply text-5xl;
+    @apply text-8xl;
   }
   h2 {
     @apply text-4xl;
@@ -27,7 +27,7 @@
   h4,
   h5,
   h6 {
-    @apply my-5 font-bold text-gray-900;
+    @apply my-5 text-gray-900 font-header font-black;
   }
 }
 
