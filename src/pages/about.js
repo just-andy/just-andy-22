@@ -49,7 +49,7 @@ const About = () => {
 
 <p>Throughout my career, I've always loved the technical side of digital design. I continue to build out small sites and side projects to keep my skills on point; you are more likely to find me in Codepen than Dribbble. Over the past two years I have been fortunate enough to provide my design skills to the fitness platform <a href="https://streetparking.com/" target="_blank" title="Street Parking Website" rel="external">Street Parking</a>. I was one of their users for two years prior, so getting to work on a project I use daily is a true passion project.</p>
 
-<p>Thanks for taking the time to check out my work, if you would like to discuss a project, please get in touch.</p>
+<p>Thanks for taking the time to check out my work, if you would like to discuss a project, <a href="https://www.linkedin.com/in/andrewcetnarskyj/" title="Andrew Cetnarskyj LinkedIn profile" target="_blank" rel="external">please get in touch via LinkedIn</a>.</p>
         </article>
         </section>
     )
