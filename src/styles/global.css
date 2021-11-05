@@ -3,6 +3,13 @@
 @tailwind components;
 @tailwind utilities;
 
+/** Body **/
+@layer base {
+  body {
+    @apply font-serif;
+  }
+}
+
 /** Headings **/
 @layer base {
   h1 {
@@ -27,7 +34,7 @@
   h4,
   h5,
   h6 {
-    @apply my-5 font-bold text-gray-900;
+    @apply my-5 text-gray-900 font-header font-bold uppercase;
   }
 }
 
@@ -99,7 +106,7 @@
 @layer components {
   .btn,
   a.btn {
-    @apply font-bold p-4 rounded-md;
+    @apply font-bold p-4 rounded-md font-sans uppercase;
   }
 
   .btn-primary,

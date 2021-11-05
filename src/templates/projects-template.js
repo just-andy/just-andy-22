@@ -2,7 +2,7 @@ import React from 'react';
 import { MDXRenderer } from 'gatsby-plugin-mdx';
 import { MDXProvider } from '@mdx-js/react';
 import { useStaticQuery, graphql, Link } from 'gatsby';
-import Blockquote from '../components/shortcodes/blockquote';
+import Blockquote from '../components/shortcodes/Blockquote';
 
 const shortcodes = {Blockquote};
 
@@ -30,9 +30,9 @@ const ProjectsTemplate = ({
     `);
     const navArray = sideNav.allMdx.edges;
     return (
-        <section className="flex flex-wrap overflow-hidden">
-            <article className="prose lg:prose-lg">
-                <div className="flex my-2 text-s">
+        <section className="container mx-auto">
+            <article className="prose md:prose-lg lg:prose-xl">
+                <div className="flex my-3 font-sans">
                     <Link to="/" title="Return to the homepage">Home</Link>&nbsp;/&nbsp;<Link to="/projects" title="View all projects">Projects</Link>
                 </div>
                 <h1 className="text-3xl lg:text-4xl">{title}</h1>
@@ -51,7 +51,7 @@ const ProjectsTemplate = ({
                         : null}
                 </div>
             </article>
-        </section>
+            </section>
     );
 };
 
