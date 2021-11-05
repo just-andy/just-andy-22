@@ -26,8 +26,8 @@ const Header = () => {
 
     return (
         <>
-            <header className="flex justify-between p-6">
-                <Link className="text-2xl md:text-5xl" to="/" title="Return to Just Andy home page">
+            <header className="flex justify-between p-6 font-normal font-sans">
+                <Link className="text-2xl md:text-3xl" to="/" title="Return to Just Andy home page">
                     Just Andy
                 </Link>
                 {/** Mobile Navigation */}

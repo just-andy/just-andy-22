@@ -1,4 +1,3 @@
-const { NONAME } = require('dns');
 const colors = require('tailwindcss/colors');
 
 module.exports = {
@@ -6,8 +5,9 @@ module.exports = {
   darkMode: false, // or 'media' or 'class'
   theme: {
     fontFamily: {
-      body: ['Helvetica,"Helvetica Neue",Arial,"Lucida Grande",sans-serif'],
-      header: ['Ostrich Sans, "Helvetica Neue",  Helvetica, Arial,"Lucida Grande",sans-serif']
+      serif: ['Baskervville, Times, serif'],
+      sans: ['League Spartan, "Helvetica Neue",  Helvetica, Arial,"Lucida Grande",sans-serif'],
+      header: ['League Spartan, "Helvetica Neue",  Helvetica, Arial,"Lucida Grande",sans-serif']
     },
     colors: {
       primary: colors.sky,
@@ -25,7 +25,7 @@ module.exports = {
       typography: (theme) => ({
         DEFAULT: {
           css: {
-            fontFamily: 'Poppins, Helvetica, sans-serif',
+            fontFamily: 'Baskervville, Times, serif',
             a: {
               color: theme('colors.primary'),
               '&:hover': {

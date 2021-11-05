@@ -10,7 +10,7 @@ const IndexPage = (props) => (
         <section className="container">
             <div className="flex text-center justify-center mx-auto lg:justify-start lg:text-left lg:w-9/12 lg:ml-0">
             <h1 className="text-4xl uppercase font-header md:text-6xl lg:text-7xl">
-            I build design systems, products and tinker with code
+            I build design systems, websites and tinker with code...
             </h1>
             </div>
         </section>
