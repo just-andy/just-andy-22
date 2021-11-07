@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'gatsby';
 import Seo from '../components/Seo';
 import CardGrid  from '../components/partials/CardGrid';
 
@@ -8,8 +7,8 @@ const IndexPage = (props) => (
     <>
         <Seo title="Welcome" description="Product Designer and design systems builder Andrew Cetnarskyj's portfolio." />
         <section className="container">
-            <div className="flex text-center justify-center mx-auto lg:justify-start lg:text-left lg:w-9/12 lg:ml-0">
-            <h1 className="text-4xl uppercase font-header md:text-6xl lg:text-7xl">
+            <div className="flex text-center justify-center mx-auto lg:justify-start lg:text-left lg:w-10/12 lg:ml-0">
+            <h1 className="text-4xl uppercase font-bold font-header md:text-6xl lg:text-7xl xl:text-8l">
             I build design systems, websites and tinker with code...
             </h1>
             </div>

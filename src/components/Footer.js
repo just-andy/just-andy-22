@@ -1,5 +1,6 @@
 import React from 'react';
 import { useStaticQuery, graphql } from 'gatsby';
+import {AiFillLinkedin, AiFillTwitterCircle, AiOutlineGithub, AiOutlineInstagram} from 'react-icons/ai'
 
 const Footer = () => {
     const data = useStaticQuery(graphql`
@@ -9,6 +10,7 @@ const Footer = () => {
                     social {
                         name
                         url
+                        icon
                     }
                 }
             }
@@ -22,7 +24,7 @@ const Footer = () => {
                 {data.site.siteMetadata.social.map((socialLink, index) => (
                     <li key={index} className="mr-2 list-none">
                         <a className="capitalize" href={socialLink.url} title={socialLink.name} rel="me" target="_blank">
-                            {socialLink.name}
+                            {getIcon(socialLink.icon)}
                         </a>
                     </li>
                 ))}
@@ -30,5 +32,24 @@ const Footer = () => {
         </footer>
     );
 };
+
+const getIcon = (icon) => {
+    switch (icon) {
+        case 'AiFillLinkedin':
+        return <AiFillLinkedin className="text-3xl" />
+        break;
+        case 'AiFillTwitterCircle':
+        return <AiFillTwitterCircle className="text-3xl" />
+        break;
+        case 'AiOutlineGithub':
+        return <AiOutlineGithub className="text-3xl" />
+        break;
+        case 'AiOutlineInstagram':
+        return <AiOutlineInstagram className="text-3xl" />
+        break;
+        default:
+            return null
+    }
+}
 
 export default Footer;
