@@ -1,28 +1,34 @@
 import React from 'react'
 import { StaticImage } from 'gatsby-plugin-image';
+import { AiFillFilePdf } from "react-icons/ai";
 
 const About = () => {
     return (
         <section>
-            <div className="container mx-auto prose md:prose-lg lg:prose-xl">
+            <div className="container mx-auto prose prose-md md:prose-lg lg:prose-xl">
             <header>
                 <h1>About Me</h1>
             </header>
-            <article className="">
-                <h3>Long Story Short</h3>
+            <article>
+                <ul>
+                    <li>I've found my niche in building design systems; the perfect mix of pixel pushing and development.</li>
+                    <li>Some of the titles I've held in my career are Head of UX, Senior Product Designer, Frontend Developer</li>
+                    <li>I have lived in Spain and worked in Gibraltar for eight years, however, my Spanish isn't great.</li>
+                    <li>I am married and have a wild son that'ss football daft.</li>
+                </ul>
             </article>
             </div>
             <article className="bg-gray-100 py-8 my-8">
-                <div className="container mx-auto flex justify-between align-text-top">
-                <header className="text-right"><h2>Experience</h2></header>
-                <div className="">
-                <dl className="mb-3">
-                    <dt className="font-header font-bold text-2xl">Wood Mackenzie</dt>
-                    <dd>Senior Product Designer - Design Systems</dd>
+                <div className="container mx-auto lg:flex lg:justify-center lg:flex-col">
+                <header className="lg:text-center"><h1>Experience</h1></header>
+                <div className="lg:flex lg:text-center  lg:justify-center">
+                <dl className="lg:w-1/3 mb-3">
+                    <dt className="font-header font-bold text-3xl mb-2">Wood Mackenzie</dt>
+                    <dd>Senior Product Designer <br />Design Systems</dd>
                     <dd>July 2019 - Present</dd>
                 </dl>
-                <dl className="mb-3">
-                    <dt className="font-header font-bold text-2xl">William Hill</dt>
+                <dl className="lg:w-1/3 mb-3">
+                    <dt className="font-header font-bold text-3xl mb-2">William Hill</dt>
                     <dd className="font-bold text-lg">Sportbook UX Lead</dd>
                     <dd>July 2019 - June 2019</dd>
                     <dd className="font-bold text-lg">Interim Head of UX</dd>
@@ -30,10 +36,17 @@ const About = () => {
                     <dd className="font-bold text-lg">Product Designer</dd>
                     <dd>October 2011 - June 2015</dd>
                 </dl>
+                <dl className="lg:w-1/3 mb-3">
+                    <dt className="font-header font-bold text-3xl mb-2">Agencies</dt>
+                    <dd className="font-bold text-lg">Crush</dd>
+                    <dd>July 2019 - June 2019</dd>
+                    <dd className="font-bold text-lg">1st Class Media</dd>
+                    <dd>July 2019 - June 2019</dd>
+                </dl>
                 </div>
             </div>
             </article>
-        <article  className="container mx-auto prose md:prose-lg lg:prose-xl">
+        <article  className="container mx-auto prose prose-md md:prose-lg lg:prose-xl">
             <h2>The Backstory</h2>
             <p className="text-bold">After completing an Honours Degree in Consumer Product Design, I started freelancing in Web Design and paid my dues to a few agencies. Remember IE6 bug's and designing with tables... yes I did that.</p>
 
@@ -49,8 +62,14 @@ const About = () => {
 
 <p>Throughout my career, I've always loved the technical side of digital design. I continue to build out small sites and side projects to keep my skills on point; you are more likely to find me in Codepen than Dribbble. Over the past two years I have been fortunate enough to provide my design skills to the fitness platform <a href="https://streetparking.com/" target="_blank" title="Street Parking Website" rel="external">Street Parking</a>. I was one of their users for two years prior, so getting to work on a project I use daily is a true passion project.</p>
 
-<p>Thanks for taking the time to check out my work, if you would like to discuss a project, <a href="https://www.linkedin.com/in/andrewcetnarskyj/" title="Andrew Cetnarskyj LinkedIn profile" target="_blank" rel="external">please get in touch via LinkedIn</a>.</p>
+<p>Thanks for taking the time to check out my work, if you would like to discuss a project, <a href="https://www.linkedin.com/in/andrewcetnarskyj/" title="Andrew Cetnarskyj LinkedIn profile" target="_blank" rel="external">please get in touch via LinkedIn</a> or download my CV below.</p>
         </article>
+        <div className="my-6 flex justify-center">
+            <a href="../AndrewCetnarskyjCVOct21.pdf" download className="bg-gray-100 hover:bg-gray-300 rounded-full p-8 ">
+                <AiFillFilePdf size="4em" />
+            </a>
+          
+        </div>
         </section>
     )
 }

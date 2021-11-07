@@ -15,6 +15,7 @@ const CardGrid = () => {
                 frontmatter {
                     title
                     order
+                    summary
                     tags
                     thumbnail {
                     childImageSharp {
@@ -34,7 +35,7 @@ const CardGrid = () => {
     return (
         <div className="grid md:grid-cols-2 xl:grid-cols-3 gap-x-4 gap-y-2">
             {props.map((card, index) =>(
-                <CardItem key={index} name={card.node.frontmatter.title} slug={card.node.slug} thumb={card.node.frontmatter.thumbnail} />
+                <CardItem key={index} name={card.node.frontmatter.title} slug={card.node.slug} thumb={card.node.frontmatter.thumbnail} summary={card.node.frontmatter.summary} />
             ))}
         </div>
     )

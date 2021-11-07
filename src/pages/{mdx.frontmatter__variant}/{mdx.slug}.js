@@ -28,6 +28,7 @@ export const query = graphql`
                 variant
                 tags
                 description
+                summary
             }
             body
         }

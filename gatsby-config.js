@@ -24,18 +24,22 @@ module.exports = {
             {
                 name: 'twitter',
                 url: 'https://twitter.com/justandydesign1',
+                icon: 'AiFillTwitterCircle'
             },
             {
                 name: 'github',
                 url: 'https://github.com/just-andy',
+                icon: 'AiOutlineGithub'
             },
             {
                 name: 'instagram',
                 url: 'https://github.com/just-andy',
+                icon: 'AiOutlineInstagram'
             },
             {
                 name: 'linkedin',
                 url: 'https://www.linkedin.com/in/andrewcetnarskyj/',
+                icon: 'AiFillLinkedin'
             },
         ],
     },
