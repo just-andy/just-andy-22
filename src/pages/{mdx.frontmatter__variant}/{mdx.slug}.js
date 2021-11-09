@@ -17,7 +17,7 @@ const MdxPage = ({
         articles: <ArticlesTemplate data={data} />,
     };
 
-    return <section className="container mx-auto">{templates[variant] ? templates[variant] : null}</section>;
+    return <section>{templates[variant] ? templates[variant] : null}</section>;
 };
 
 export const query = graphql`
@@ -29,6 +29,11 @@ export const query = graphql`
                 tags
                 description
                 summary
+                banner {
+                    childImageSharp {
+                        gatsbyImageData(width: 1920)
+                    }
+                }
             }
             body
         }

@@ -54,7 +54,7 @@
 
 @layer components {
   .header-nav {
-    @apply text-lg flex justify-around capitalize;
+    @apply text-xl flex justify-around capitalize;
   }
 
   .header-nav a {
@@ -106,12 +106,12 @@
 @layer components {
   .btn,
   a.btn {
-    @apply font-bold p-4 rounded-md font-sans uppercase;
+    @apply font-bold p-4 rounded-md font-sans uppercase no-underline;
   }
 
   .btn-primary,
   a.btn-primary {
-    @apply bg-primary-500 text-white hover:bg-primary-700 text-gray-50;
+    @apply bg-primary-500 text-white hover:bg-primary-700 hover:text-gray-50;
   }
 
   .btn-secondary,

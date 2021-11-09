@@ -8,7 +8,7 @@ const Projects = () => {
       <Seo title="Projects" description="A wide portfolio of projects that Andrew Cetnarskyj has worked on." />
       <header>
       <h1 className="text-6xl my-12">My Projects </h1>
-      </header>
+      </header> 
       <CardGrid />
     </section>
   );

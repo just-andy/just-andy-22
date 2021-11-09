@@ -20,13 +20,15 @@ export const bannerQuery = graphql`
 // Get Image Path
 const getImagePath = (edges, imageName) => {
     const imagePath = edges.find((edge) => edge.node.name === imageName);
-    return imagePath.node;
+    return imagePath;
 };
 
-const HeroBanner = ({ title, filename, link }) => {
+const HeroBanner = ({ title, filename}) => {
     const response = useStaticQuery(bannerQuery);
     const banners = response.allFile.edges;
     const image = getImage(getImagePath(banners, filename));
+
+    console.log(banners);
 
     // Return
     return (
@@ -48,7 +50,7 @@ const HeroBanner = ({ title, filename, link }) => {
                 }}
             >
                 {/* Any content here will be centered in the component */}
-                <h1 className=" text-white bg-gray-600 py-4 px-8">Hero text</h1>
+                <h1 className=" text-white bg-gray-600 py-4 px-8">{title}</h1>
             </div>
         </div>
     );
