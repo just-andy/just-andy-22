@@ -1,54 +1,42 @@
-import React, { useState } from 'react';
-import { Link, useStaticQuery, graphql } from 'gatsby';
-import MobileNav from './partials/MobileNav';
+import React from 'react';
+import { Link } from 'gatsby';
 
 const Header = () => {
-    /** State */
-    const [isOpen, setNav] = useState(false);
-    const toggleNav = () => {
-        setNav((isOpen) => !isOpen);
-    };
 
-    /** Menu Query */
-    const menuData = useStaticQuery(graphql`
-        query menuQuery {
-            site {
-                id
-                siteMetadata {
-                    menuLinks {
-                        url
-                        label
-                    }
-                }
-            }
+    const whatLocation = props => {
+        const currentLocation = props.pathname
+        if (currentLocation.includes("projects")) {
+          return { className: "header-nav-active" }
         }
-    `);
+      }
+
 
     return (
         <>
-            <header className="flex justify-between p-6 font-normal font-sans">
-                <Link className="text-2xl md:text-3xl" to="/" title="Return to Just Andy home page">
+            <header className="flex justify-between p-6 md:p-10 font-normal font-sans flex-col md:flex-row">
+                <Link className="flex text-3xl py-8 justify-center md:py-0 md:justify-start" to="/" title="Return to Just Andy home page">
                     Just Andy
                 </Link>
-                {/** Mobile Navigation */}
-                <div className="flex items-center md:hidden">
-                    <button onClick={toggleNav} type="button">
-                        {isOpen === true ? 'Close' : 'Menu'}
-                    </button>
-                </div>
-                                {/** Desktop Navigation */}
-                                <nav className="hidden lg:flex items-center justify-end invisible md:visible">
+                {/** Desktop Navigation */}
+                <nav className="lg:flex items-center justify-center md:justify-end ">
                     <ul className="header-nav">
-                        {menuData.site.siteMetadata.menuLinks.map((menu, index) => (
-                            <li key={index} className="mr-4">
-                                <Link to={menu.url} activeClassName="header-nav-active" title={`Go to ${menu.label}`}>
-                                    {menu.label}
-                                </Link>
-                            </li>
-                        ))}
+                        <li className="mr-4">
+                            <Link to="/" activeClassName="header-nav-active" title="Go to home page">
+                            Home
+                            </Link>
+                        </li>
+                        <li className="mr-4">
+                            <Link to="/projects" getProps={({ location }) => whatLocation(location)} title="Andy Cetnarskyj's projects">
+                            Projects
+                            </Link>
+                        </li>
+                        <li className="mr-0">
+                            <Link to="/about" activeClassName="header-nav-active" title="About Andy Cetnarskyj">
+                            About
+                            </Link>
+                        </li>
                     </ul>
                 </nav>
-                <MobileNav value={isOpen} updateNav={toggleNav} menuData={menuData.site.siteMetadata.menuLinks} />
             </header>
         </>
     );
