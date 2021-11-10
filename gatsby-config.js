@@ -6,20 +6,6 @@ module.exports = {
         siteUrl: 'https://andrewcetnarskyj.co.uk', // No trailing slash allowed!
         image: '/images/banner.jpg', // Path to your image you placed in the 'static' folder
         twitterUsername: '@justandydesign1',
-        menuLinks:[
-            {
-                label:'home',
-                url:'/'
-            },
-            {
-                label:'Projects',
-                url:'/projects'
-            },
-            {
-              label:'About',
-              url:'/about'
-          },
-        ],
         social: [
             {
                 name: 'twitter',

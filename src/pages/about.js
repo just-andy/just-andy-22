@@ -12,36 +12,36 @@ const About = () => {
             <article>
                 <ul>
                     <li>I've found my niche in building design systems; the perfect mix of pixel pushing and development.</li>
-                    <li>Some of the titles I've held in my career are Head of UX, Senior Product Designer, Frontend Developer</li>
+                    <li>Some of the titles I've held in my career are Head of UX, Senior Product Designer and Frontend Developer</li>
                     <li>I have lived in Spain and worked in Gibraltar for eight years, however, my Spanish isn't great.</li>
-                    <li>I am married and have a wild son that'ss football daft.</li>
+                    <li>I started building websites with Dreamweaver MX and when IE6 was cutting edge.</li>
+                    <li>I am married, have a wild son that's football daft and I love working out.</li>
                 </ul>
             </article>
             </div>
-            <article className="bg-gray-100 py-8 my-8">
-                <div className="container mx-auto lg:flex lg:justify-center lg:flex-col">
-                <header className="lg:text-center"><h1>Experience</h1></header>
-                <div className="lg:flex lg:text-center  lg:justify-center">
-                <dl className="lg:w-1/3 mb-3">
+            <article className="bg-gray-100 py-3 lg:py-8 my-8">
+                <div className="container mx-auto">
+                <header className="lg:text-center"><h2 className="mt-0">Experience</h2></header>
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <dl className="md:text-right">
                     <dt className="font-header font-bold text-3xl mb-2">Wood Mackenzie</dt>
-                    <dd>Senior Product Designer <br />Design Systems</dd>
-                    <dd>July 2019 - Present</dd>
+                    <dd className="font-bold text-lg">Senior Product Designer <br />Design Systems, <em>Jul 2019 - Nov 2021</em></dd>
                 </dl>
-                <dl className="lg:w-1/3 mb-3">
+                <dl >
+                    <dt className="font-header font-bold text-3xl mb-2">Wood Mackenzie</dt>
+                    <dd className="font-bold text-lg">Senior Product Designer <br />Design Systems, <em>Jul 2019 - Nov 2021</em></dd>
+
+                </dl>
+                <dl className="md:text-right">
                     <dt className="font-header font-bold text-3xl mb-2">William Hill</dt>
-                    <dd className="font-bold text-lg">Sportbook UX Lead</dd>
-                    <dd>July 2019 - June 2019</dd>
-                    <dd className="font-bold text-lg">Interim Head of UX</dd>
-                    <dd>July 2015 - June 2018</dd>
-                    <dd className="font-bold text-lg">Product Designer</dd>
-                    <dd>October 2011 - June 2015</dd>
+                    <dd className="font-bold text-lg">Sportbook UX Lead, <em>Sep 2015 - Jun 2019</em></dd>
+                    <dd className="font-bold text-lg">Interim Head of UX, <em>Jan 2015 - Sep 2015</em></dd>
+                    <dd className="font-bold text-lg">UX/UI Designer, <em>Oct 2011 - Dec 2014</em></dd>
                 </dl>
-                <dl className="lg:w-1/3 mb-3">
+                <dl>
                     <dt className="font-header font-bold text-3xl mb-2">Agencies</dt>
-                    <dd className="font-bold text-lg">Crush</dd>
-                    <dd>July 2019 - June 2019</dd>
-                    <dd className="font-bold text-lg">1st Class Media</dd>
-                    <dd>July 2019 - June 2019</dd>
+                    <dd className="font-bold text-lg">Crush, <em>Sep 2008 - Oct 2011</em></dd>
+                    <dd className="font-bold text-lg">1st Class Media, <em>Aug 2006 - Aug 2008</em></dd>
                 </dl>
                 </div>
             </div>
@@ -65,7 +65,7 @@ const About = () => {
 <p>Thanks for taking the time to check out my work, if you would like to discuss a project, <a href="https://www.linkedin.com/in/andrewcetnarskyj/" title="Andrew Cetnarskyj LinkedIn profile" target="_blank" rel="external">please get in touch via LinkedIn</a> or download my CV below.</p>
         </article>
         <div className="my-6 flex justify-center">
-            <a href="../AndrewCetnarskyjCVOct21.pdf" download className="bg-gray-100 hover:bg-gray-300 rounded-full p-8 ">
+            <a href="../AndrewCetnarskyjCVOct21.pdf" download className="bg-gray-100 hover:bg-primary-500 hover:text-white rounded-full p-8 ">
                 <AiFillFilePdf size="4em" />
             </a>
           
