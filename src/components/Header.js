@@ -13,15 +13,18 @@ const Header = () => {
 
     return (
         <>
-            <header className="flex justify-between p-6 md:p-10 font-normal font-sans flex-col md:flex-row">
-                <Link className="flex text-3xl py-8 justify-center md:py-0 md:justify-start" to="/" title="Return to Just Andy home page">
-                    Just Andy
-                </Link>
+            <header className="flex justify-between p-4 font-normal font-sans flex-col md:flex-row md:px-8 md:py-6 ">
+                <div className="flex flex-col items-center md:flex-row md:items-center">
+                    <figure className="avatar"></figure>
+                    <Link className="flex text-5xl mt-2 mb-10 justify-center hidden secondary-link md:block md:mb-0 md:mt-0 md:justify-start md:items-center" to="/" title="Return to Just Andy home page">
+                        Just Andy
+                    </Link>
+                </div>
                 {/** Desktop Navigation */}
-                <nav className="lg:flex items-center justify-center md:justify-end ">
+                <nav className="items-center justify-center my-8 md:justify-end lg:flex ">
                     <ul className="header-nav">
                         <li className="mr-4">
-                            <Link to="/" activeClassName="header-nav-active" title="Go to home page">
+                            <Link to="/"  activeClassName="header-nav-active" title="Go to home page">
                             Home
                             </Link>
                         </li>
@@ -38,6 +41,7 @@ const Header = () => {
                     </ul>
                 </nav>
             </header>
+            <div className="line-break md:hidden"></div>
         </>
     );
 };
