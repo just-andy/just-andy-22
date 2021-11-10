@@ -11,7 +11,7 @@ const CardItem = (props) => {
     <Link to={`/projects/${props.slug}`} title={`${props.name} Project`}>
     <GatsbyImage image={image} alt={`${props.name} Thumbnail}`} />
     </Link>
-    <h3 className="my-0"><Link to={props.slug} title={`${props.name} Project`}>{props.name}</Link></h3>
+    <h3 className="my-0"><Link className="secondary-link" to={`/projects/${props.slug}`} title={`${props.name} Project`}>{props.name}</Link></h3>
     <p className="mb-3 md:mb-0 lg:text-xl ">{props.summary}</p>
     </div>
     )

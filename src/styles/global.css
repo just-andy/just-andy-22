@@ -6,7 +6,7 @@
 /** Body **/
 @layer base {
   body {
-    @apply font-serif;
+    @apply font-serif bg-secondary-50;
   }
 }
 
@@ -34,8 +34,43 @@
   h4,
   h5,
   h6 {
-    @apply my-5 text-gray-900 font-header font-bold uppercase;
+    @apply my-5 font-header font-bold uppercase;
   }
+
+  h1 {
+    @apply text-gray-800;
+  }
+
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply text-gray-700;
+  }
+}
+
+/* Avatar */
+@layer components {
+  .avatar {
+    @apply block rounded-full bg-primary-200 mt-2;
+    width: 120px;
+    height: 120px;
+  }
+
+  @screen md {
+    .avatar {
+      @apply mr-3;
+      width: 48px;
+      height: 48px;
+    }
+  }
+}
+
+/* Image Wrapper */
+
+.gatsby-image-wrapper {
+  @apply rounded-sm;
 }
 
 /* Links */
@@ -50,19 +85,42 @@
   }
 }
 
+@layer base {
+  .secondary-link {
+    @apply text-gray-800 hover:text-gray-600;
+  }
+}
+
 /* Navigation */
 
 @layer components {
   .header-nav {
-    @apply text-xl flex justify-around capitalize;
+    @apply text-2xl flex justify-around capitalize;
   }
 
   .header-nav a {
-    @apply text-gray-600 hover:bg-primary-200 py-2 px-3 rounded-md;
+    @apply text-gray-600 border-primary-50 border-b-0 p-2 hover:border-primary-700 border-b-4;
   }
 
-  .header-nav-active {
-    @apply text-primary-700 bg-gray-100;
+  a.header-nav-active {
+    @apply text-primary-500 border-b-4 border-primary-500;
+  }
+}
+
+/* Line Break */
+@layer components {
+  .line-break {
+    @apply bg-gray-50 relative mx-auto;
+    width: 100px;
+    height: 2px;
+    z-index: 1;
+  }
+
+  .line-break:before {
+    @apply absolute left-0 bottom-0 border-b-2 border-gray-200 flex justify-center;
+    content: "";
+    height: 2px;
+    width: 100px;
   }
 }
 

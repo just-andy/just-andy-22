@@ -19,7 +19,7 @@ const About = () => {
                 </ul>
             </article>
             </div>
-            <article className="bg-gray-100 py-3 lg:py-8 my-8">
+            <article className="bg-primary-100 py-3 lg:py-8 my-8">
                 <div className="container mx-auto">
                 <header className="lg:text-center"><h2 className="mt-0">Experience</h2></header>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -65,7 +65,7 @@ const About = () => {
 <p>Thanks for taking the time to check out my work, if you would like to discuss a project, <a href="https://www.linkedin.com/in/andrewcetnarskyj/" title="Andrew Cetnarskyj LinkedIn profile" target="_blank" rel="external">please get in touch via LinkedIn</a> or download my CV below.</p>
         </article>
         <div className="my-6 flex justify-center">
-            <a href="../AndrewCetnarskyjCVOct21.pdf" download className="bg-gray-100 hover:bg-primary-500 hover:text-white rounded-full p-8 ">
+            <a href="../AndrewCetnarskyjCVOct21.pdf" download className="bg-primary-500 text-white hover:bg-primary-700 hover:text-white rounded-full p-8 ">
                 <AiFillFilePdf size="4em" />
             </a>
           
