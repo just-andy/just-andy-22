@@ -10,7 +10,7 @@ const shortcodes = {Blockquote};
 const ProjectsTemplate = ({
     data: {
         mdx: {
-            frontmatter: { title, banner, tags, summary },
+            frontmatter: { title, strapline, banner, tags, summary },
             body,
         },
     },
@@ -20,33 +20,26 @@ const ProjectsTemplate = ({
 
     return (
         <>
-            <div className="grid mb-3" style={{ height: '350px' }}>
+        <div className="grid mb-3" style={{ height: '400px' }}>
             <GatsbyImage
-                style={{ gridArea: '1/1', objectFit: 'cover', height: '350px' }}
+                style={{ gridArea: '1/1', objectFit: 'cover', height: '400px' }}
                 image={image}
                 alt={`${title} Banner`}
             />
-            <div
-                className="text-center"
-                style={{
-                    // By using the same grid area for both, they are stacked on top of each other
-                    gridArea: '1/1',
-                    position: 'relative',
-                    // This centers the other elements inside the hero component
-                    placeItems: 'center',
-                    display: 'grid',
-                }}
-            >
+            <div className="text-center grid relative place-items-center bannerGridArea">
                 {/* Any content here will be centered in the component */}
-                <h1 className=" text-white text-3xl md:text-5xl lg:text-6xl">{title}</h1>
+                <header className="flex flex-col">
+                <h2 className="text-white text-2xl md:text-4xl lg:text-6xl">{strapline}</h2>
+                <h4 className="text-gray-100 text-lg px-4  md:text-xl md:px-6 ">{summary}</h4>
+                </header>
             </div>
         </div>
-        <section className="container mx-auto"></section>
-            <article className="mx-auto prose md:prose-lg lg:prose-xl">
+        <section className="container mx-auto lg:w-8/12 xl:w-10/12">
+            <article className="prose md:prose-lg lg:prose-xl max-w-none">
                 <div className="flex my-3 font-sans">
                     <Link to="/" title="Return to the homepage">Home</Link>&nbsp;/&nbsp;<Link to="/projects" title="View all projects">Projects</Link>
                 </div>
-                <h1 className="text-3xl lg:text-4xl">{title}</h1>
+                <h1 className="text-3xl lg:text-5xl">{title}</h1>
 
                 <MDXProvider components={shortcodes}>
                     <MDXRenderer>{body}</MDXRenderer>
@@ -62,6 +55,7 @@ const ProjectsTemplate = ({
                         : null}
                 </div>
             </article>
+        </section>
         </>
     );
 };
