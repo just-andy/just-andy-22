@@ -39,18 +39,12 @@ const HeroBanner = ({ title, filename}) => {
                 alt={`${title} Banner`}
             />
 
-            <div
-                style={{
-                    // By using the same grid area for both, they are stacked on top of each other
-                    gridArea: '1/1',
-                    position: 'relative',
-                    // This centers the other elements inside the hero component
-                    placeItems: 'center',
-                    display: 'grid',
-                }}
-            >
+            <div className="grid relative place-items-center col-span-1 row-span-1">
                 {/* Any content here will be centered in the component */}
-                <h1 className=" text-white bg-gray-600 py-4 px-8">{title}</h1>
+                <div>
+                <h2 className=" text-white bg-gray-600 py-4 px-8">{title}</h2>
+                <span>{summary}</span>
+                </div>
             </div>
         </div>
     );
