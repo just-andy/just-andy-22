@@ -17,7 +17,7 @@ const MdxPage = ({
         articles: <ArticlesTemplate data={data} />,
     };
 
-    return <section>{templates[variant] ? templates[variant] : null}</section>;
+    return <>{templates[variant] ? templates[variant] : null}</>;
 };
 
 export const query = graphql`
@@ -25,6 +25,7 @@ export const query = graphql`
         mdx(slug: { eq: $slug }) {
             frontmatter {
                 title
+                strapline
                 variant
                 tags
                 description
