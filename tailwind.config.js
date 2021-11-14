@@ -72,6 +72,18 @@ module.exports = {
               '&:hover': {
                 color: theme('colors.primary.700'),
               },
+            },
+            blockquote: {
+              borderLeft: 'none',
+              fontStyle: 'normal',
+              fontSize: '2em',
+              paddingLeft: '0',
+              lineHeight: '1.25em'
+            },
+            figure: {
+              figcaption: {
+                fontSize: '1.5em'
+              }
             }
           }
         }

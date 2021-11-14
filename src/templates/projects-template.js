@@ -4,13 +4,15 @@ import { MDXProvider } from '@mdx-js/react';
 import { Link } from 'gatsby';
 import { GatsbyImage, getImage } from 'gatsby-plugin-image';
 import Blockquote from '../components/shortcodes/Blockquote';
+import ImageText from '../components/shortcodes/ImageText';
+import Seo from '../components/Seo';
 
-const shortcodes = {Blockquote};
+const shortcodes = {Blockquote, ImageText};
 
 const ProjectsTemplate = ({
     data: {
         mdx: {
-            frontmatter: { title, strapline, banner, tags, summary },
+            frontmatter: { title, strapline, banner, tags, summary, description },
             body,
         },
     },
@@ -20,9 +22,10 @@ const ProjectsTemplate = ({
 
     return (
         <>
-        <div className="grid mb-3" style={{ height: '400px' }}>
+        <Seo title={title} description={description} />
+        <div className="grid mb-3" style={{ height: '500px' }}>
             <GatsbyImage
-                style={{ gridArea: '1/1', objectFit: 'cover', height: '400px' }}
+                style={{ gridArea: '1/1', objectFit: 'cover', height: '500px' }}
                 image={image}
                 alt={`${title} Banner`}
             />
@@ -35,7 +38,7 @@ const ProjectsTemplate = ({
             </div>
         </div>
         <section className="container mx-auto lg:w-8/12 xl:w-10/12">
-            <article className="prose md:prose-lg lg:prose-xl max-w-none">
+            <article className="projects prose md:prose-lg lg:prose-xl max-w-none">
                 <div className="flex my-3 font-sans">
                     <Link to="/" title="Return to the homepage">Home</Link>&nbsp;/&nbsp;<Link to="/projects" title="View all projects">Projects</Link>
                 </div>
