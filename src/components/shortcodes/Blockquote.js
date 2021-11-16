@@ -1,11 +1,11 @@
 import React from 'react'
 
-const Blockquote = ({cite, children}) => {
+const Blockquote = ({caption, children}) => {
     return (
-        <figure className="bg-primary-200 py-4 child ">
-            <div className="flex flex-col justify-center container mx-auto w-8/12">
+        <figure className="bg-primary-100 py-4 child ">
+            <div className="flex flex-col justify-center container mx-auto w-10/12 lg:w-8/12">
             <blockquote>{children}</blockquote>
-            <figcaption>{cite}</figcaption>
+            <figcaption>{caption}</figcaption>
             </div>
         </figure>
     )
