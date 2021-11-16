@@ -46,16 +46,16 @@
   h4,
   h5,
   h6 {
-    @apply text-gray-700;
+    @apply text-gray-900;
   }
 }
 
 /* Avatar */
 @layer components {
   .avatar {
-    @apply block rounded-full bg-primary-200 mt-2;
-    width: 120px;
-    height: 120px;
+    @apply block mt-2;
+    width: 128px;
+    height: 128px;
   }
 
   @screen md {
@@ -73,6 +73,17 @@
   @apply rounded-sm;
 }
 
+/* SVG Container*/
+@layer components {
+  .svg-container {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    vertical-align: middle;
+    overflow: hidden;
+  }
+}
+
 /* Links */
 
 @layer base {
@@ -87,7 +98,7 @@
 
 @layer base {
   .secondary-link {
-    @apply text-gray-800 hover:text-gray-600;
+    @apply text-gray-800 hover:text-primary-700;
   }
 }
 
@@ -99,11 +110,26 @@
   }
 
   .header-nav a {
-    @apply text-gray-600 border-primary-50 border-b-0 p-2 hover:border-primary-700 hover:text-primary-700 border-b-4;
+    @apply text-gray-600 border-primary-50 p-2 hover:border-primary-700 hover:text-primary-700 border-b-4;
   }
 
   a.header-nav-active {
     @apply text-primary-500 border-b-4 border-primary-500;
+  }
+}
+
+/* Hero Banner */
+@layer components {
+  .hero-banner {
+    grid-area: 1 / 1;
+    object-fit: cover;
+    height: 360px;
+  }
+
+  @screen lg {
+    .hero-banner {
+      height: 500px;
+    }
   }
 }
 

@@ -5,9 +5,10 @@ import { Link } from 'gatsby';
 import { GatsbyImage, getImage } from 'gatsby-plugin-image';
 import Blockquote from '../components/shortcodes/Blockquote';
 import ImageText from '../components/shortcodes/ImageText';
+import StatCounter from '../components/shortcodes/StatCounter';
 import Seo from '../components/Seo';
 
-const shortcodes = {Blockquote, ImageText};
+const shortcodes = {Blockquote, ImageText, StatCounter};
 
 const ProjectsTemplate = ({
     data: {
@@ -23,17 +24,27 @@ const ProjectsTemplate = ({
     return (
         <>
         <Seo title={title} description={description} />
-        <div className="grid mb-3" style={{ height: '500px' }}>
+        <div className="grid mb-3">
             <GatsbyImage
-                style={{ gridArea: '1/1', objectFit: 'cover', height: '500px' }}
+                className="hero-banner"
                 image={image}
                 alt={`${title} Banner`}
             />
             <div className="text-center grid relative place-items-center bannerGridArea">
                 {/* Any content here will be centered in the component */}
-                <header className="flex flex-col">
+                <header className="flex flex-col text-gray-100 text-left px-4 lg:px-0 ">
                 <h2 className="text-white text-2xl md:text-4xl lg:text-6xl">{strapline}</h2>
-                <h4 className="text-gray-100 text-lg px-4  md:text-xl md:px-6 ">{summary}</h4>
+                <div className="text-gray-100 text-xl my-2 md:text-2xl ">{summary}</div>
+                <div className="flex text-gray-100 justify-start text-lg lg:text-xl last:mr-0">
+                    <div className="mr-2 flex items-center font-bold">My Role:</div>
+                    {tags
+                        ? tags.map((tag, index) => (
+                              <div key={index}>
+                                  {tag},&nbsp;
+                              </div>
+                          ))
+                        : null}
+                </div>
                 </header>
             </div>
         </div>
@@ -47,16 +58,6 @@ const ProjectsTemplate = ({
                 <MDXProvider components={shortcodes}>
                     <MDXRenderer>{body}</MDXRenderer>
                 </MDXProvider>
-                <div className="flex mt-5 mr-3 justify-start font-sans text-xl">
-                    <div className="mr-2 flex items-center text-gray-600 font-bold">Tags:</div>
-                    {tags
-                        ? tags.map((tag, index) => (
-                              <span className="block text-xl text-gray-500 list-none capitalize text-sm" key={index}>
-                                  {tag},&nbsp;
-                              </span>
-                          ))
-                        : null}
-                </div>
             </article>
         </section>
         </>

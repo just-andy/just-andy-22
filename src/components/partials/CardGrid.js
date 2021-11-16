@@ -33,7 +33,7 @@ const CardGrid = () => {
     const props = projectsList.allMdx.edges;
 
     return (
-        <div className="grid gap-x-6 gap-y-4 md:grid-cols-2 xl:grid-cols-3 ">
+        <div className="grid gap-x-6 gap-y-4 md:grid-cols-2 lg:grid-cols-3 ">
             {props.map((card, index) =>(
                 <CardItem key={index} name={card.node.frontmatter.title} slug={card.node.slug} thumb={card.node.frontmatter.thumbnail} summary={card.node.frontmatter.summary} />
             ))}
