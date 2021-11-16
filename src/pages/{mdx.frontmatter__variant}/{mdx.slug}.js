@@ -8,7 +8,7 @@ const MdxPage = ({
     data,
     data: {
         mdx: {
-            frontmatter: { variant },
+            frontmatter: { variant }
         },
     },
 }) => {
