@@ -1,6 +1,6 @@
 import React from 'react'
 import { StaticImage } from 'gatsby-plugin-image';
-import { AiFillFilePdf } from "react-icons/ai";
+import { RiFilePdfLine } from "react-icons/ri";
 
 const About = () => {
     return (
@@ -66,7 +66,7 @@ const About = () => {
         </article>
         <div className="my-6 flex justify-center">
             <a href="../AndrewCetnarskyjCVOct21.pdf" download className="bg-primary-500 text-white hover:bg-primary-700 hover:text-white rounded-full p-8 ">
-                <AiFillFilePdf size="4em" />
+                <RiFilePdfLine size="4em" />
             </a>
           
         </div>
