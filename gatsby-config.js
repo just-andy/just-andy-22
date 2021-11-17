@@ -10,22 +10,23 @@ module.exports = {
             {
                 name: 'twitter',
                 url: 'https://twitter.com/justandydesign1',
-                icon: 'AiFillTwitterCircle'
+                icon: 'RiTwitterLine'
             },
             {
                 name: 'github',
                 url: 'https://github.com/just-andy',
-                icon: 'AiOutlineGithub'
+                icon: 'RiGithubLine'
             },
             {
                 name: 'instagram',
                 url: 'https://github.com/just-andy',
-                icon: 'AiOutlineInstagram'
+                icon: 'RiInstagramLine'
             },
             {
                 name: 'linkedin',
                 url: 'https://www.linkedin.com/in/andrewcetnarskyj/',
-                icon: 'AiFillLinkedin'
+        theme_color: `#111111`,
+                icon: 'RiLinkedinBoxLine'
             },
         ],
     },
@@ -35,6 +36,7 @@ module.exports = {
         `gatsby-plugin-react-helmet`,
         `gatsby-plugin-postcss`,
         `gatsby-plugin-sharp`,
+        `gatsby-plugin-mdx-embed`,
         `gatsby-transformer-sharp`,
         `gatsby-remark-images`,
         {
@@ -65,8 +67,8 @@ module.exports = {
         name: `Just Andy`,
         short_name: `Just Andy`,
         start_url: `/`,
-        background_color: `#E34849`,
-        theme_color: `#a2466c`,
+        background_color: `#FF5E33`,
+        theme_color: `#111111`,
         display: `standalone`,
         icon: `src/images/favicon.png`
       },
