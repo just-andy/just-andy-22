@@ -23,7 +23,7 @@ const Footer = () => {
             <ul className="flex mx-auto items-center py-4 w-6/12 justify-between md:justify-end">
                 {data.site.siteMetadata.social.map((socialLink, index) => (
                     <li key={index} className="mx-1 md:mx-2">
-                        <a className="capitalize" href={socialLink.url} title={socialLink.name} rel="me" target="_blank">
+                        <a className=" transition duration-500 ease-in-out hover:text-primary-700 transform hover:-translate-y-1 hover:scale-110" href={socialLink.url} title={socialLink.name} rel="me" target="_blank">
                             {getIcon(socialLink.icon)} 
                         </a>
                     </li>

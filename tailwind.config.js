@@ -1,5 +1,5 @@
+const { red } = require('tailwindcss/colors');
 const colors = require('tailwindcss/colors');
-const { fontSize } = require('tailwindcss/defaultTheme');
 
 module.exports = {
   purge: ['./src/**/*.{js,jsx,ts,tsx}'],
@@ -49,17 +49,18 @@ module.exports = {
         DEFAULT: {
           css: {
             fontFamily: 'Baskervville, Times, serif',
+            color: theme('colors.gray.700'),
             h1: {
-              color: theme('colors.gray.800')
+              color: theme('colors.gray.900')
             },
             h2: {
-              color: theme('colors.gray.700')
+              color: theme('colors.gray.800')
             },
             h3: {
-              color: theme('colors.gray.700')
+              color: theme('colors.gray.800')
             },
             h4: {
-              color: theme('colors.gray.700')
+              color: theme('colors.gray.800')
             },
             h5: {
               color: theme('colors.gray.700')
@@ -84,6 +85,9 @@ module.exports = {
               figcaption: {
                 fontSize: '1.5em'
               }
+            },
+            'ul > li::before': {
+              backgroundColor: theme('colors.primary.500')
             }
           }
         }
