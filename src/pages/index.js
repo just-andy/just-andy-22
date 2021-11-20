@@ -7,8 +7,8 @@ const IndexPage = (props) => (
     <>
         <Seo title="Welcome" description="Product Designer and design systems builder Andrew Cetnarskyj's portfolio." />
         <section className="container">
-            <div className="flex text-center justify-center mx-auto lg:justify-start lg:text-left lg:w-10/12 lg:ml-0">
-            <h1 className="text-5xl uppercase font-black font-header mt-0 text-gray-800 md:text-6xl lg:text-7xl xl:text-8l">
+            <div className="flex justify-center mx-auto lg:justify-start lg:text-left lg:w-11/12 lg:ml-0">
+            <h1 className="text-4xl uppercase font-black font-header mt-0 text-gray-800 md:text-5xl lg:text-6xl xl:text-7l">
             I work with design systems, build websites and tinker with code...
             </h1>
             </div>

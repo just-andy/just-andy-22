@@ -16,21 +16,26 @@ const DocsTemplate = ({
 }) => (
     <>
         <Seo title={title} description={description} />
-        <section className="prose md:prose-lg lg:prose-xl xl:prose-2xl max-w-none">
-            <h1>{title}</h1>
-            <h5>{`Variant - ${variant}`}</h5>
-            <ul className="flex mr-3 justify-start">
-                <li>Tags</li>
-                {tags ? tags.map((tag, index) => <li key={index}>{tag}</li>) : null}
-            </ul>
+        <section className="container mx-auto lg:w-8/12 xl:w-10/12">
+            <article className="projects prose md:prose-lg lg:prose-xl max-w-none">
+                <div className="flex mt-4 mb-8 ">
+                    <Link to="/" title="Return to the homepage">Home</Link>&nbsp;/&nbsp;<Link to="/articles" title="View other articles">Articles</Link>
+                </div>
+                <h1 className="text-3xl lg:text-5xl">{title}</h1>
+                <div className="flex text-gray-100 justify-start text-lg lg:text-xl last:mr-0">
+                    <div className="mr-2 flex items-center font-bold">Tags:</div>
+                    {tags
+                        ? tags.map((tag, index) => (
+                              <div key={index}>
+                                  {tag},&nbsp;
+                              </div>
+                          ))
+                        : null}
+                </div>
             <MDXProvider>
                 <MDXRenderer>{body}</MDXRenderer>
             </MDXProvider>
-            <div className="flex w-full my-3">
-                <Link to="/articles" className="btn btn-primary">
-                    Back to articles
-                </Link>
-            </div>
+            </article>
         </section>
     </>
 );

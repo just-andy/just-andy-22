@@ -33,7 +33,7 @@ const getImagePath = (edges, imageName) => {
 const imageFile = getImage(getImagePath(images,image));
 
     return (
-        <div className="child my-8 pb-8 bg-white ">
+        <div className="child section-spacer section-white pb- ">
             <div className="container mx-auto grid grid-cols-1 gap-x-3 md:grid-cols-2">
                 <div className="flex items-center">
                 <GatsbyImage image={imageFile} alt={altText} />

@@ -19,27 +19,27 @@ const About = () => {
                 </ul>
             </article>
             </div>
-            <article className="bg-primary-100 py-3 lg:py-8 my-8">
+            <article className="section-white py-3 lg:py-8 my-8">
                 <div className="container mx-auto">
-                <header className="lg:text-center"><h2 className="mt-0">Experience</h2></header>
+                <header className="md:text-center"><h2 className="mt-0">Experience</h2></header>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <dl className="md:text-right">
-                    <dt className="font-header font-bold text-3xl mb-2">Wood Mackenzie</dt>
-                    <dd className="font-bold text-lg">Senior Product Designer <br />Design Systems, <em>Jul 2019 - Nov 2021</em></dd>
+                    <dt className="font-header font-bold text-gray-600 text-2xl mb-2">Wood Mackenzie</dt>
+                    <dd className="font-bold text-lg">Senior Product Designer <br />Design Systems, <em>Jul 2019 - Present</em></dd>
                 </dl>
                 <dl >
-                    <dt className="font-header font-bold text-3xl mb-2">Wood Mackenzie</dt>
-                    <dd className="font-bold text-lg">Senior Product Designer <br />Design Systems, <em>Jul 2019 - Nov 2021</em></dd>
+                    <dt className="font-header font-bold text-gray-600 text-2xl mb-2">Street Parking</dt>
+                    <dd className="font-bold text-lg">Product Designer <br />Design Systems, <em>April 2020 - Present</em></dd>
 
                 </dl>
                 <dl className="md:text-right">
-                    <dt className="font-header font-bold text-3xl mb-2">William Hill</dt>
+                    <dt className="font-header font-bold text-gray-600  text-2xl mb-2">William Hill</dt>
                     <dd className="font-bold text-lg">Sportbook UX Lead, <em>Sep 2015 - Jun 2019</em></dd>
                     <dd className="font-bold text-lg">Interim Head of UX, <em>Jan 2015 - Sep 2015</em></dd>
                     <dd className="font-bold text-lg">UX/UI Designer, <em>Oct 2011 - Dec 2014</em></dd>
                 </dl>
                 <dl>
-                    <dt className="font-header font-bold text-3xl mb-2">Agencies</dt>
+                    <dt className="font-header font-bold text-gray-600  text-2xl mb-2">Agencies</dt>
                     <dd className="font-bold text-lg">Crush, <em>Sep 2008 - Oct 2011</em></dd>
                     <dd className="font-bold text-lg">1st Class Media, <em>Aug 2006 - Aug 2008</em></dd>
                 </dl>

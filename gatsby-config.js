@@ -19,23 +19,29 @@ module.exports = {
             },
             {
                 name: 'instagram',
-                url: 'https://github.com/just-andy',
+                url: 'https://www.instagram.com/just_andy_c/',
                 icon: 'RiInstagramLine'
             },
             {
                 name: 'linkedin',
                 url: 'https://www.linkedin.com/in/andrewcetnarskyj/',
-        theme_color: `#111111`,
                 icon: 'RiLinkedinBoxLine'
             },
         ],
     },
     plugins: [
+        {resolve: `gatsby-plugin-sharp`,
+          options: {
+            defaults: {
+              className: 'rounded-xl',
+              imgClassName: 'rounded-xl'
+            }
+          }
+        },
         `gatsby-plugin-image`,
         `gatsby-plugin-netlify`,
         `gatsby-plugin-react-helmet`,
         `gatsby-plugin-postcss`,
-        `gatsby-plugin-sharp`,
         `gatsby-plugin-mdx-embed`,
         `gatsby-transformer-sharp`,
         `gatsby-remark-images`,
@@ -93,6 +99,13 @@ module.exports = {
       options: {
         name: `projects`,
         path: `${__dirname}/src/content/projects/`
+      }
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `fonts`,
+        path: `${__dirname}/static/fonts/`
       }
     },
     {
