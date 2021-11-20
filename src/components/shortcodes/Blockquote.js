@@ -2,7 +2,7 @@ import React from 'react'
 
 const Blockquote = ({caption, children, sectionColour}) => {
 
-    const bgColour = (sectionColour !== undefined ? `${sectionColour} child` : 'bg-primary-100 child')
+    const bgColour = (sectionColour !== undefined ? `${sectionColour} child` : 'section-primary child')
 
     return (
         <div className={`${bgColour} section-spacer`}>
