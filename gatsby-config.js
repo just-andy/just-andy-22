@@ -71,6 +71,7 @@ module.exports = {
                   rel: "nofollow noopener noreferrer"
                 }
               },
+              `gatsby-remark-responsive-iframe`,
               `gatsby-remark-copy-linked-files`,
               `gatsby-remark-prismjs`
             ]

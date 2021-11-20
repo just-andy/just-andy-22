@@ -69,12 +69,6 @@
   }
 }
 
-/* Image Wrapper */
-
-.gatsby-image-wrapper {
-  @apply rounded-sm;
-}
-
 /* SVG Container*/
 @layer components {
   .svg-container {
@@ -124,7 +118,7 @@
   }
 
   .header-nav a {
-    @apply text-gray-600 border-gray-100 py-2 px-4 border-b-4 hover:border-primary-700 hover:text-primary-700;
+    @apply text-gray-800 border-gray-100 py-2 px-4 border-b-4 hover:border-primary-700 hover:text-primary-700;
   }
 
   a.header-nav-active {
