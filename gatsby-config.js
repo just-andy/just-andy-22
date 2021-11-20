@@ -1,7 +1,7 @@
 module.exports = {
     siteMetadata: {
         title: 'Andrew Cetnarskyj Portfolio',
-        titleTemplate: '%s · Andrew Cetnrskyj Portfolio',
+        titleTemplate: '%s · Andrew Cetnarskyj Portfolio',
         description: 'A portfolio work by Edinburgh based, product designer and design system builder Andrew Cetnarskyj.',
         siteUrl: 'https://andrewcetnarskyj.co.uk', // No trailing slash allowed!
         image: '/images/banner.jpg', // Path to your image you placed in the 'static' folder
@@ -45,6 +45,7 @@ module.exports = {
         `gatsby-plugin-mdx-embed`,
         `gatsby-transformer-sharp`,
         `gatsby-remark-images`,
+        `gatsby-plugin-sitemap`,
         {
           resolve: `gatsby-plugin-mdx`,
           options: {
@@ -72,7 +73,16 @@ module.exports = {
               },
               `gatsby-remark-copy-linked-files`,
               `gatsby-remark-prismjs`
-        ]
+            ]
+          }
+    },
+    {
+      resolve: 'gatsby-plugin-web-font-loader',
+      options: {
+        custom: {
+          families: ["Cartridge-Regular"],
+          urls: ["/fonts/fonts.css"],
+        },
       }
     },
     {
