@@ -49,7 +49,7 @@ const ProjectsTemplate = ({
             </div>
         </div>
         <section className="container mx-auto my-8 lg:w-8/12 xl:w-10/12">
-            <article className="projects prose md:prose-lg lg:prose-xl max-w-none">
+            <article className="projects prose prose-md md:prose-lg lg:prose-xl max-w-none">
                 <div className="flex mt-4 mb-8 ">
                     <Link to="/" title="Return to the homepage">Home</Link>&nbsp;/&nbsp;<Link to="/projects" title="View all projects">Projects</Link>
                 </div>
