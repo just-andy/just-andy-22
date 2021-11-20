@@ -1,0 +1,8 @@
+@font-face {
+  font-family: Cartridge;
+  font-weight: 400;
+  font-style: normal;
+  src: url("Cartridge-Regular.woff2") format("woff2"),
+    url("Cartridge-Regular.woff") format("woff");
+  font-display: swap;
+}

@@ -24,7 +24,7 @@ const ProjectsTemplate = ({
     return (
         <>
         <Seo title={title} description={description} />
-        <div className="grid mb-3">
+        <div className="grid">
             <GatsbyImage
                 className="hero-banner"
                 image={image}
@@ -48,9 +48,9 @@ const ProjectsTemplate = ({
                 </header>
             </div>
         </div>
-        <section className="container mx-auto lg:w-8/12 xl:w-10/12">
+        <section className="container mx-auto my-8 lg:w-8/12 xl:w-10/12">
             <article className="projects prose md:prose-lg lg:prose-xl max-w-none">
-                <div className="flex my-3 font-sans">
+                <div className="flex mt-4 mb-8 ">
                     <Link to="/" title="Return to the homepage">Home</Link>&nbsp;/&nbsp;<Link to="/projects" title="View all projects">Projects</Link>
                 </div>
                 <h1 className="text-3xl lg:text-5xl">{title}</h1>

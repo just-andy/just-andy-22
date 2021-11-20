@@ -7,12 +7,12 @@ module.exports = {
   theme: {
     fontFamily: {
       serif: ['Baskervville, Times, serif'],
-      sans: ['League Spartan, "Helvetica Neue",  Helvetica, Arial,"Lucida Grande",sans-serif'],
-      header: ['League Spartan, "Helvetica Neue",  Helvetica, Arial,"Lucida Grande",sans-serif']
+      sans: ['Cartridge, "Helvetica Neue",  Helvetica, Arial,"Lucida Grande",sans-serif'],
+      header: ['Cartridge, "Helvetica Neue",  Helvetica, Arial,"Lucida Grande",sans-serif']
     },
     colors: {
       primary: {
-          '50': '#fff7f5', 
+          '50': '#f5f4f2', 
           '100': '#ffefeb', 
           '200': '#ffd7cc', 
           '300': '#ffbfad', 
@@ -35,7 +35,7 @@ module.exports = {
         '800': '#67504b', 
         '900': '#54423d'
     },
-      gray: colors.coolGray,
+      gray: colors.warmGray,
       white: colors.white,
       positive: colors.green,
       negative: colors.red,
@@ -49,7 +49,7 @@ module.exports = {
         DEFAULT: {
           css: {
             fontFamily: 'Baskervville, Times, serif',
-            color: theme('colors.gray.700'),
+            color: theme('colors.gray.800'),
             h1: {
               color: theme('colors.gray.900')
             },
@@ -60,13 +60,13 @@ module.exports = {
               color: theme('colors.gray.800')
             },
             h4: {
-              color: theme('colors.gray.800')
+              color: theme('colors.gray.600')
             },
             h5: {
-              color: theme('colors.gray.700')
+              color: theme('colors.gray.600')
             },
             h6: {
-              color: theme('colors.gray.700')
+              color: theme('colors.gray.600')
             },
             a: {
               color: theme('colors.primary'),
