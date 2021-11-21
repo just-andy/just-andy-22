@@ -1,6 +1,6 @@
 import React from 'react'
 import { StaticImage } from 'gatsby-plugin-image';
-import { RiFilePdfLine } from "react-icons/ri";
+import { RiFileDownloadLine } from "react-icons/ri";
 
 const About = () => {
     return (
@@ -64,11 +64,10 @@ const About = () => {
 
 <p>Thanks for taking the time to check out my work, if you would like to discuss a project, <a href="https://www.linkedin.com/in/andrewcetnarskyj/" title="Andrew Cetnarskyj LinkedIn profile" target="_blank" rel="external">please get in touch via LinkedIn</a> or download my CV below.</p>
         </article>
-        <div className="my-6 flex justify-center">
-            <a href="../AndrewCetnarskyjCVOct21.pdf" download className="bg-primary-500 text-white hover:bg-primary-700 hover:text-white rounded-full p-8 ">
-                <RiFilePdfLine size="4em" />
+        <div className="mt-8 mb-16 flex justify-center">
+            <a href="../AndrewCetnarskyjCVOct21.pdf" download className="bg-primary-500 text-white rounded-full p-8 hover:bg-primary-700 hover:text-white hover:shadow-lg ">
+                <RiFileDownloadLine size="4em" />
             </a>
-          
         </div>
         </section>
     )

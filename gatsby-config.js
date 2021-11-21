@@ -45,6 +45,7 @@ module.exports = {
         `gatsby-plugin-mdx-embed`,
         `gatsby-transformer-sharp`,
         `gatsby-remark-images`,
+        `gatsby-plugin-smoothscroll`,
         `gatsby-plugin-sitemap`,
         {
           resolve: `gatsby-plugin-mdx`,

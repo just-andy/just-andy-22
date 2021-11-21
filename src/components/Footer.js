@@ -1,5 +1,6 @@
 import React from 'react';
 import { useStaticQuery, graphql } from 'gatsby';
+import scrollTo from 'gatsby-plugin-smoothscroll';
 import {RiLinkedinBoxLine, RiTwitterLine, RiGithubLine, RiInstagramLine, RiArrowUpLine} from 'react-icons/ri'
 
 const Footer = () => {
@@ -19,8 +20,8 @@ const Footer = () => {
 
     return (
         <>
-        <div className="flex justify-center my-12">
-            <a href="#top" className="text-2xl block p-6 rounded-full bg-gray-200 hover:bg-gray-300"><RiArrowUpLine /></a>
+        <div className="flex justify-center my-8 md:my-12">
+            <button onClick={() => scrollTo('#top')} className="text-2xl block p-3 rounded-full bg-gray-200 text-primary-500 md:p-3 md:text-xl hover:bg-primary-700 hover:text-white hover:shadow-md"><RiArrowUpLine /></button>
         </div>
         <footer className="flex flex-col p-6 justify-items-center flex-col-reverse bg-white md:flex-row md:justify-between border-t-2 border-gray-200">
             <div className="flex flex-col text-center md:items-center md:flex-row md:text-left md:w-6/12"><div>&copy; Andrew Cetnarskyj {new Date().getFullYear()}</div><div className="ml-0 md:ml-2">Built with <a className="secondary-link underline" href="https://www.gatsbyjs.com/" rel="external nofollow noopener noreferrer" target="_blank" >Gatsby</a> &amp;, <a className="secondary-link underline" href="https://www.netlify.com/" rel="external nofollow noopener noreferrer" target="_blank">Netlify</a> &amp; <a className="secondary-link underline" href="https://tailwindcss.com/" rel="external nofollow noopener noreferrer" target="_blank" >Tailwind</a></div></div>
