@@ -8,5 +8,6 @@ Built with
 
 ## To Do
 
-- Update hero banner
-- Fix mobile navigation
+- Fix section styling, add [unwrapped styles](https://www.gatsbyjs.com/plugins/gatsby-remark-unwrap-images/?=gatsby-remark)
+- Add a gallery component
+- Add Typescript
