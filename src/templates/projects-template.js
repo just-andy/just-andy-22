@@ -6,9 +6,10 @@ import { GatsbyImage, getImage } from 'gatsby-plugin-image';
 import Blockquote from '../components/shortcodes/Blockquote';
 import ImageText from '../components/shortcodes/ImageText';
 import StatCounter from '../components/shortcodes/StatCounter';
+import Gallery from '../components/shortcodes/Gallery';
 import Seo from '../components/Seo';
 
-const shortcodes = {Blockquote, ImageText, StatCounter};
+const shortcodes = {Blockquote, ImageText, StatCounter, Gallery};
 
 const ProjectsTemplate = ({
     data: {
