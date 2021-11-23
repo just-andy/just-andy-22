@@ -35,6 +35,7 @@
     "babel-preset-gatsby": "^2.0.0",
     "cacheable-lookup": "^6.0.4",
     "create-gatsby": "^2.0.0",
+    "fslightbox-react": "^1.6.2-2",
     "gatsby": "^4.2.0",
     "gatsby-link": "^4.0.0",
     "gatsby-page-utils": "^2.0.0",

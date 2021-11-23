@@ -2,7 +2,7 @@ import React from 'react';
 import Seo from '../components/Seo';
 import CardGrid  from '../components/partials/CardGrid';
 import { useStaticQuery, graphql } from 'gatsby';
-
+import Gallery from '../components/shortcodes/Gallery'
 
 // markup
 const IndexPage = (props) => {
