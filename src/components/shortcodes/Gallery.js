@@ -3,7 +3,10 @@ import { graphql, useStaticQuery } from "gatsby"
 import FsLightbox from 'fslightbox-react';
 import { GatsbyImage, getImage } from 'gatsby-plugin-image';
 
-const Gallery = ({sources}) => {
+const Gallery = ({sources, sectionColour}) => {
+
+    const bgColour = (sectionColour !== undefined ? `${sectionColour}` : '');
+
 
     const images = useStaticQuery(graphql`
     query projectImages {
@@ -44,13 +47,13 @@ const Gallery = ({sources}) => {
   
 
     return (
-    <section className="section-spacer child ">
+    <section className={`section-spacer child ${sectionColour}`}>
         <div className="container mx-auto my-8">
             <div className="grid gap-x-3 grid-cols-3">
             {newImages.map((item, index) => {
                 return(
                     <button key={index}  onClick={() => {handleClick(index + 1)}}>
-                        <GatsbyImage className=" overflow-hidden hover:shadow-lg" image={getImage(item)} alt={item.name}/>
+                        <GatsbyImage style={{marginTop: 0, marginBottom: 0}} imgStyle={{objectFit: 'contain'}} className=" hover:shadow-lg" image={getImage(item)} alt={item.name}/>
                     </button>
                 )
             })}
