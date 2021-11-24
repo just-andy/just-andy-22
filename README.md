@@ -9,5 +9,6 @@ Built with
 ## To Do
 
 - Fix section styling, add [unwrapped styles](https://www.gatsbyjs.com/plugins/gatsby-remark-unwrap-images/?=gatsby-remark)
-- Add a gallery component
+- Fix Gallery Image sizes
+- Add Street Parking and Hydrocarbon content
 - Add Typescript
