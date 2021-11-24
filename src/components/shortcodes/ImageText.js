@@ -3,7 +3,10 @@ import { useStaticQuery, graphql } from 'gatsby';
 import { GatsbyImage, getImage } from 'gatsby-plugin-image';
 
 
-const ImageText = ({image, altText, children}) => {
+const ImageText = ({image, altText, children, sectionColour}) => {
+
+    const bgColour = (sectionColour !== undefined ? `${sectionColour}` : '');
+
 
 const files = useStaticQuery(graphql`
 query fileImage {
@@ -12,7 +15,7 @@ query fileImage {
                 node {
                     name
                     childImageSharp {
-                    gatsbyImageData(width: 500)
+                    gatsbyImageData(width: 500, layout: FIXED)
                     fluid {
                         src
                     }
@@ -36,10 +39,10 @@ const getImagePath = (edges, imageName) => {
 const imageFile = getImage(getImagePath(images,image));
 
     return (
-        <div className="child section-spacer">
-            <div className="container mx-auto grid grid-cols-1 gap-x-3 md:grid-cols-2">
+        <div className={`child section-spacer ${sectionColour}`}>
+            <div className="container mx-auto grid grid-cols-1 mb-12 gap-x-3 md:grid-cols-2">
                 <div className="flex items-center">
-                <GatsbyImage image={imageFile} alt={altText} />
+                <GatsbyImage style={{overflow:'visible'}} image={imageFile} alt={altText} layout="fixed" />
                 </div>
                 <div className="flex items-center md:ml-8">
                     <div>
