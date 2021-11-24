@@ -74,6 +74,7 @@ module.exports = {
               },
               `gatsby-remark-responsive-iframe`,
               `gatsby-remark-copy-linked-files`,
+              `gatsby-remark-unwrap-images`,
               `gatsby-remark-prismjs`
             ]
           }

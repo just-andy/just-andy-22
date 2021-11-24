@@ -44,13 +44,13 @@ const Gallery = ({sources}) => {
   
 
     return (
-    <section className="section-spacer section-white child ">
+    <section className="section-spacer child ">
         <div className="container mx-auto my-8">
             <div className="grid gap-x-3 grid-cols-3">
             {newImages.map((item, index) => {
                 return(
                     <button key={index}  onClick={() => {handleClick(index + 1)}}>
-                        <GatsbyImage className="hover:shadow-lg" image={getImage(item)} alt={item.name}/>
+                        <GatsbyImage className=" overflow-hidden hover:shadow-lg" image={getImage(item)} alt={item.name}/>
                     </button>
                 )
             })}
