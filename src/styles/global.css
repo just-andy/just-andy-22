@@ -108,6 +108,9 @@
   .section-primary {
     @apply bg-primary-100 border-b-2 border-t-2 border-primary-300;
   }
+  .section-spacer {
+    @apply my-8 lg:my-12;
+  }
 }
 
 /* Navigation */
