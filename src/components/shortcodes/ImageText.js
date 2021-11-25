@@ -15,7 +15,7 @@ query fileImage {
                 node {
                     name
                     childImageSharp {
-                    gatsbyImageData(width: 500, layout: FIXED)
+                    gatsbyImageData(width: 500)
                     fluid {
                         src
                     }
@@ -39,10 +39,10 @@ const getImagePath = (edges, imageName) => {
 const imageFile = getImage(getImagePath(images,image));
 
     return (
-        <div className={`child section-spacer ${sectionColour}`}>
+        <div className={`child section-spacer mb-12 ${sectionColour}`}>
             <div className="container mx-auto grid grid-cols-1 mb-12 gap-x-3 md:grid-cols-2">
                 <div className="flex items-center">
-                <GatsbyImage style={{overflow:'visible'}} image={imageFile} alt={altText} layout="fixed" />
+                <GatsbyImage style={{objectFit:'contain'}} image={imageFile} alt={altText} />
                 </div>
                 <div className="flex items-center md:ml-8">
                     <div>
