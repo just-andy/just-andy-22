@@ -3,7 +3,7 @@ module.exports = {
         title: 'Andrew Cetnarskyj Portfolio',
         titleTemplate: '%s · Andrew Cetnarskyj Portfolio',
         description: 'A portfolio work by Edinburgh based, product designer and design system builder Andrew Cetnarskyj.',
-        siteUrl: 'https://andrewcetnarskyj.co.uk', // No trailing slash allowed!
+        siteUrl: 'https://just-andy.uk', // No trailing slash allowed!
         image: '/images/banner.jpg', // Path to your image you placed in the 'static' folder
         twitterUsername: '@justandydesign1',
         social: [

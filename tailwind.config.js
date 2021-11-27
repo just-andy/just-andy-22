@@ -73,6 +73,10 @@ module.exports = {
                 color: theme('colors.primary.700'),
               },
             },
+            img: {
+              marginTop: 0,
+              marginBottom: 0
+            },
             blockquote: {
               borderLeft: 'none',
               fontStyle: 'normal',
