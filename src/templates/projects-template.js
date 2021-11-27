@@ -34,7 +34,7 @@ const ProjectsTemplate = ({
             <div className="text-center grid relative place-items-center bannerGridArea">
                 {/* Any content here will be centered in the component */}
                 <header className="flex flex-col text-gray-100 text-left px-4 lg:px-0 ">
-                <h2 className="text-white text-4xl md:text-5xl lg:text-6xl">{strapline}</h2>
+                <h2 className="text-white text-4xl md:text-5xl lg:text-6xl uppercase">{strapline}</h2>
                 <div className="text-gray-100 text-xl my-2 md:text-2xl ">{summary}</div>
                 <div className="flex flex-wrap text-gray-100 justify-start text-lg lg:text-xl last:mr-0">
                     <div className="mr-2 block items-center font-bold">My Role:</div>

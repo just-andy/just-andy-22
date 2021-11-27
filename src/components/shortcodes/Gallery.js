@@ -53,7 +53,7 @@ const Gallery = ({sources, sectionColour}) => {
             {newImages.map((item, index) => {
                 return(
                     <button key={index}  onClick={() => {handleClick(index + 1)}}>
-                        <GatsbyImage style={{marginTop: 0, marginBottom: 0}} imgStyle={{objectFit: 'contain'}} className=" hover:shadow-lg" image={getImage(item)} alt={item.name}/>
+                        <GatsbyImage imgStyle={{objectFit: 'contain'}} className=" hover:shadow-lg" image={getImage(item)} alt={item.name}/>
                     </button>
                 )
             })}

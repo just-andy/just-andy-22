@@ -13,7 +13,7 @@
 /** Headings **/
 @layer base {
   h1 {
-    @apply text-5xl;
+    @apply text-5xl uppercase;
   }
   h2 {
     @apply text-4xl;
@@ -34,7 +34,7 @@
   h4,
   h5,
   h6 {
-    @apply my-5 font-header font-bold uppercase;
+    @apply my-5 font-header font-bold;
   }
 
   h1 {
@@ -117,7 +117,7 @@
 
 @layer components {
   .header-nav {
-    @apply text-2xl flex justify-around capitalize;
+    @apply text-2xl flex justify-around;
   }
 
   .header-nav a {
@@ -158,17 +158,6 @@
     content: "";
     height: 2px;
     width: 100px;
-  }
-}
-
-/* Menu Overlay */
-@layer components {
-  .menu-overlay {
-    @apply fixed top-0 left-0 right-0 bottom-0 bg-white justify-center overflow-y-auto z-50;
-  }
-
-  .menu-overlay ul li {
-    @apply relative list-none text-center block;
   }
 }
 
@@ -216,5 +205,16 @@
     width: 100vw;
     position: relative;
     left: calc(-50vw + 50%);
+  }
+}
+
+/* Galley Images */
+
+@layer components {
+  .lg\:prose-xl img,
+  .prose-xl img,
+  .prose img {
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
   }
 }
