@@ -31,6 +31,7 @@ const Seo = ({ title, description, image, pathname, article }) => (
                         <meta name="description" content={Seo.description} />
                         <meta name="keywords" content="Andrew Cetnarskyj, Product Designer, UX, UI, Design Systems" />
                         <meta name="image" content={Seo.image} />
+                        <meta name="type" content="website" />
                         {Seo.url && <meta property="og:url" content={Seo.url} />}
                         {(article ? true : null) && <meta property="og:type" content="article" />}
                         {Seo.title && <meta property="og:title" content={Seo.title} />}

@@ -5,6 +5,7 @@ import { GatsbyImage, getImage } from 'gatsby-plugin-image';
 
 const Gallery = ({sources, sectionColour}) => {
 
+    console.log(sectionColour)
     const bgColour = (sectionColour !== undefined ? `${sectionColour}` : '');
 
 
