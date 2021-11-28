@@ -34,7 +34,7 @@
   h4,
   h5,
   h6 {
-    @apply my-5 font-header font-bold;
+    @apply my-5 font-header font-bold capitalize;
   }
 
   h1 {
@@ -216,5 +216,13 @@
   .prose img {
     margin-top: 0 !important;
     margin-bottom: 0 !important;
+  }
+}
+
+/* Blockquote */
+
+@layer base {
+  .prose-lg blockquote {
+    padding-left: 0 !important;
   }
 }

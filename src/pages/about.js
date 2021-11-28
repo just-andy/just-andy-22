@@ -1,11 +1,14 @@
 import React from 'react'
 import { StaticImage } from 'gatsby-plugin-image';
 import { RiFileDownloadLine } from "react-icons/ri";
+import Seo from '../components/Seo';
 
 const About = () => {
     return (
+        <>
+        <Seo title="My background and experience" description="Find out more about Andy Cetnarskyj,his work experience or download his CV." />
         <section>
-            <div className="container mx-auto prose prose-md md:prose-lg lg:prose-xl">
+            <div className="container mx-auto prose prose-md md:prose-lg lg:prose-xl lg:w-8/12 xl:w-10/12 max-w-none">
             <header>
                 <h1>About Me</h1>
             </header>
@@ -46,7 +49,7 @@ const About = () => {
                 </div>
             </div>
             </article>
-        <article  className="container mx-auto prose prose-md md:prose-lg lg:prose-xl">
+        <article  className="container mx-auto prose prose-md md:prose-lg lg:prose-xl lg:w-8/12 xl:w-10/12 max-w-none">
             <h2>The Backstory</h2>
             <p className="text-bold">After completing an Honours Degree in Consumer Product Design, I started freelancing in Web Design and paid my dues to a few agencies. Remember IE6 bug's and designing with tables... yes I did that.</p>
 
@@ -70,6 +73,7 @@ const About = () => {
             </a>
         </div>
         </section>
+        </>
     )
 }
 

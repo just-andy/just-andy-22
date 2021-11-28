@@ -3,9 +3,12 @@ import { useStaticQuery, graphql } from 'gatsby';
 import { GatsbyImage, getImage } from 'gatsby-plugin-image';
 
 
-const ImageText = ({image, altText, children, sectionColour}) => {
+const ImageText = ({image, altText, children, sectionColour, reverse}) => {
 
     const bgColour = (sectionColour !== undefined ? `${sectionColour}` : '');
+    const cardStyleImage = (reverse !== undefined ? `flex items-center justify-center lg:order-2` : `flex justify-center  items-center`);
+    const cardStyleText = (reverse !== undefined && reverse === true ? `flex items-center justify-center  lg:mr-8 mb:order-1` : `flex items-center justify-center lg:ml-8`);
+
 
 
 const files = useStaticQuery(graphql`
@@ -39,12 +42,12 @@ const getImagePath = (edges, imageName) => {
 const imageFile = getImage(getImagePath(images,image));
 
     return (
-        <div className={`child section-spacer mb-12 ${sectionColour}`}>
-            <div className="container mx-auto grid grid-cols-1 mb-12 gap-x-3 md:grid-cols-2">
-                <div className="flex items-center">
+        <div className={`child section-spacer ${sectionColour}`}>
+            <div className="container mx-auto grid grid-cols-1 gap-x-3 md:grid-cols-2">
+                <div className={cardStyleImage}>
                 <GatsbyImage style={{objectFit:'contain'}} image={imageFile} alt={altText} />
                 </div>
-                <div className="flex items-center md:ml-8">
+                <div className={cardStyleText}>
                     <div>
                     {children}
                     </div>

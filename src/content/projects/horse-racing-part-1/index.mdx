@@ -22,25 +22,24 @@ It called for smart user-centred design. It called for a presence to combat the 
 
 And it called for a willingness to knuckle down to get the job and that's what I did…
 
-<ImageText
-  sectionColour="section-white"
-  image="hr1-gather-insights"
-  altText="Gather Insights image"
->
-  <h2>Gather Insights</h2>
-  <p>
-    The first stage of the process was to gather customer and business insights.
-  </p>
-  <p>
-    <b>Customer Insights</b> were gathered through reviewing comments left in
-    our customer feedback tool, conducting a members survey and looking at the
-    feedback that our support team received.
-  </p>
-  <p>
-    For <b>business insights</b>, we asked our racing trading team to send us
-    their frustrations.
-  </p>
+<div className="section-white section-spacer child">
+
+<ImageText image="hr1-gather-insights" altText="Gather Insights image">
+
+## Gather Insights
+
+The first stage of the process was to gather customer and business insights.
+
+**Customer Insights** were gathered through reviewing comments left in
+our customer feedback tool, conducting a members survey and looking at the
+feedback that our support team received.
+
+For **business insights**, we asked our racing trading team to send us
+their frustrations.
+
 </ImageText>
+
+<ImageText image="hr1-user-workshop-2" altText="User Workshop snapshots" reverse>
 
 ## Stakeholder Workshop
 
@@ -48,54 +47,38 @@ Getting stakeholders and Hippo's in a room for a few hours is not an easy task. 
 
 Using techniques from Pete and I's [Lumina Institue](https://www.luma-institute.com/ "Lumina Institute Courses") training we conducted the workshop in a few hours.
 
-<ImageText image="hr1-matrix" altText="Photos of workshop group">
-  <h2>Workshop techniques</h2>
-
-  <p>
-    <b>Whats on Your Radar</b> - We blocked out the key business goals for this
-    project.
-  </p>
-  <p>
-    <b>Affinity Clustering</b> - Using the gathered insights above we broke the
-    group into teams and asked them to group the insights into clusters, and put
-    these clusters in importance of primary, secondary and tertiary importance.
-  </p>
-  <p>
-    <b>Buy A Feature</b> -&nbsp; We asked the two{" "}
-    <a
-      rel="noopener noreferrer nofollow"
-      href="https://www.acronymfinder.com/Highest-Paid-Person%27s-Opinion-(HiPPO).html"
-      target="_blank"
-    >
-      HIPPO's
-    </a>
-    in the workshop to use gold and silver stickers to call out what their
-    priorities were.
-  </p>
-  <p>
-    <b>Complexity Matrix </b>- Finally we took the output of the above steps and
-    created a matrix that set out the product owners roadmap of work for the
-    project.
-  </p>
 </ImageText>
 
-![Horse Racing Mockups](./hr1-mockups.jpeg)
+<ImageText image="hr1-matrix" altText="Photos of workshop group">
+
+## Workshop techniques
+
+**Whats on Your Radar** - We blocked out the key business goals for this
+project.
+
+**Affinity Clustering** - Using the gathered insights above we broke the
+group into teams and asked them to group the insights into clusters, and put
+these clusters in importance of primary, secondary and tertiary importance.
+
+**Buy A Feature** - We asked the two [HIPPO's](<https://www.acronymfinder.com/Highest-Paid-Person%27s-Opinion-(HiPPO).html>) in the workshop to use gold and silver stickers to call out what their priorities were.
+
+**Complexity Matrix** - Finally we took the output of the above steps and created a matrix that set out the product owners roadmap of work for the project.
+
+</ImageText>
 
 <ImageText
-  sectionColour="section-white"
   image="hr1-personas"
   altText="Personas Text"
+  reverse
 >
-  <h2>Research and Personas</h2>
-  <p>
-    The first page that we had to tackle was the meetings page. We set out to
-    improve two KPI's:
-  </p>
-  <ul>
-    <li>NPS through improved nav</li>
-    <li>increase in T/O via regions outside UK and USA</li>
-  </ul>
-</ImageText>
+
+## Research and Personas
+
+The first page that we had to tackle was the meetings page. We set out to
+improve two KPI's:
+
+- Net Promoter Score through an improved navigation
+- Increase in turnover via regions outside UK and USA
 
 Starting with web analytics we identified the top user goals of the page and
 again gathered insights into gaps in the page functionality.
@@ -105,12 +88,84 @@ continually provide the appropriate racing over the 23 hour period in a number
 of countries. This led us to consider a rolling electronic program guide (EPG)
 of data.
 
+</ImageText>
+
+</div>
+
+![Horse Racing Mockups](./hr1-mockups.jpeg)
+
+<div className="section-white section-space child">
+
+<ImageText
+image="hr1-user-test-feedback"
+altText="User testing feecback snapshots"
+>
+
+## User Testing
+
+We put a number of wireframes, for both mobile and desktop, through remote user testing using What Users Do (now part of [User Zoom](https://www.userzoom.com/ "User Zoom Website")).
+
+The wireframes performed well, as stripped back visuals with only links highlighted in colour. It only took two rounds of testing to get the results that we were looking for.
+
+The next step was to move the wireframes through to UI.
+
+</ImageText>
+
+<ImageText image="hr1-user-ui" altText="User testing the UI" reverse>
+
+## When tests fail
+
+Moving the designs onwards, I worked with the UI designers to integrate our pattern library and create a more polished UI. We took this high-resolution design back through to further tests in What Users Do.
+
+The high-resolution mockups didn't test as well at all.
+
+Users struggled with large amounts of content, conflicting colour combinations and clashing logic in the pattern library.
+
+The biggest sticking point was the display of race times in the carousel in a scannable, efficient layout.
+
+In the end, it took three rounds of tests to get a design to the point that we were confident would meet all the user needs.
+
+</ImageText>
+
+</div>
+
+### Identifying Personas
+
 We worked with our intelligence team to identify the personas of our users and
-it was clear that our older customers should be the focus of our work, being
-worth 4 times as much as the younger profile.
+it was clear that **our older customers should be the focus of our work, being
+worth four times as much as the younger profile**.
+
+This led us to consider our older demographic our main users, and look at ways to educate the younger audience into using the provided information and media to improve their experience.
+
+<ImageText
+image="hr1-build-racecard"
+alt="Racecard UI Concepts"
+sectionColour="section-white"
+reverse
+>
+
+### Build A Racecard
+
+A key feature of our racing page is the ability for the user to select races from multiple meetings and countries and build their own racecard.
+
+The feature on our previous pages was poorly implemented and this was a chance to improve it.
+
+User testing told us that users wanted a clear CTA to trigger the function and that the counter of selections to be clearer.
+
+I worked with the UI designer to tidy this up and prepared a Framer JS prototype to demonstrate to the development team. [View the Framer Prototype](https://framer.cloud/oXcok)
+
+</ImageText>
 
 ## The Outcome
 
 This project was in development when I left the company and no longer have access
-to the statistics. However, it has made it to market and the company continues to
-lead in this space.
+to the statistics. However, the [page was delivered as designed](https://sports.williamhill.com/betting/en-gb/horse-racing/meetings) and William Hill continues to be a leader in horse racing betting.
+
+<StatCounter
+  stats={[
+    { number: 15, label: "Concepts" },
+    { number: 34, label: "Usability Tests" },
+    { number: 5, label: "Interations" },
+    { number: "99+", label: "Coffees" },
+  ]}
+/>
