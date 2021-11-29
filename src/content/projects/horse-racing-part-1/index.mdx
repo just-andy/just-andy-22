@@ -12,6 +12,8 @@ featured: true
 private: false
 ---
 
+import { Link } from "gatsby";
+
 ## In A Nutshell
 
 [William Hill](https://www.williamhill.com "William Hill website") is a household name - not just in the UK, but across the betting world. They've transitioned to the world of online gambling very successfully, with horse-racing accounting for **around £1.4billion of turnover in 2017 alone** (and it's very much part of their history).
@@ -49,7 +51,7 @@ Using techniques from Pete and I's [Lumina Institue](https://www.luma-institute.
 
 </ImageText>
 
-<ImageText image="hr1-matrix" altText="Photos of workshop group">
+<div className="container mx-auto">
 
 ## Workshop techniques
 
@@ -64,7 +66,7 @@ these clusters in importance of primary, secondary and tertiary importance.
 
 **Complexity Matrix** - Finally we took the output of the above steps and created a matrix that set out the product owners roadmap of work for the project.
 
-</ImageText>
+</div>
 
 <ImageText
   image="hr1-personas"
@@ -160,6 +162,8 @@ I worked with the UI designer to tidy this up and prepared a Framer JS prototype
 
 This project was in development when I left the company and no longer have access
 to the statistics. However, the [page was delivered as designed](https://sports.williamhill.com/betting/en-gb/horse-racing/meetings) and William Hill continues to be a leader in horse racing betting.
+
+You can <Link to="../horse-racing-part-2" title="Horse Racing case study part 2">read more about work on this project in Part 2.</Link>
 
 <StatCounter
   stats={[
