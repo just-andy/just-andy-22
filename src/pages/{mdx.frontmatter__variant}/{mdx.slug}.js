@@ -2,7 +2,6 @@ import React from 'react';
 import { graphql } from 'gatsby';
 
 import ProjectsTemplate from '../../templates/projects-template';
-import ArticlesTemplate from '../../templates/articles-template';
 
 const MdxPage = ({
     data,
@@ -14,7 +13,6 @@ const MdxPage = ({
 }) => {
     const templates = {
         projects: <ProjectsTemplate data={data} />,
-        articles: <ArticlesTemplate data={data} />,
     };
 
     return <>{templates[variant] ? templates[variant] : null}</>;
