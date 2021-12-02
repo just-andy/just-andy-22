@@ -48,6 +48,23 @@ module.exports = {
         `gatsby-plugin-smoothscroll`,
         {resolve:`gatsby-plugin-sitemap`,
         exclude: [`/404/`],
+        query: `
+          {
+            site {
+              siteMetadata {
+                siteUrl
+              }
+            }
+
+            allSitePage {
+              edges {
+                node {
+                  path
+                }
+              }
+            }
+          }
+        `,
         },
         {
           resolve: `gatsby-plugin-mdx`,
