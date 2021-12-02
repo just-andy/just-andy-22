@@ -46,7 +46,9 @@ module.exports = {
         `gatsby-transformer-sharp`,
         `gatsby-remark-images`,
         `gatsby-plugin-smoothscroll`,
-        `gatsby-plugin-sitemap`,
+        {resolve:`gatsby-plugin-sitemap`,
+        exclude: [`/404/`],
+        },
         {
           resolve: `gatsby-plugin-mdx`,
           options: {
@@ -121,12 +123,5 @@ module.exports = {
         path: `${__dirname}/static/fonts/`
       }
     },
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: `articles`,
-        path: `${__dirname}/src/content/articles/`
-      }
-    }
   ]
 };
