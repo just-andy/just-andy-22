@@ -172,6 +172,38 @@
   }
 }
 
+/* Tile Item */
+@layer components {
+
+  .tile-content {
+    display: none;
+  }
+
+  @media (hover: hover) {
+  .tile-wrapper {
+    @apply relative w-full;
+  }
+
+  .tile-wrapper:hover .tile-image {
+    @apply opacity-30;
+  }
+
+  .tile-wrapper:hover .tile-content {
+    @apply opacity-100;
+  }
+
+    .tile-content {
+      @apply absolute text-white opacity-0 w-full h-full rounded-xl p-8 flex items-center ;
+      cursor: pointer;
+      background-color: rgba(0,0,0, 0.8);
+      transition: .3s ease;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+}
+
 /* Chidl utility */
 @layer base {
   @screen lg {

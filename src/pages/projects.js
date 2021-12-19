@@ -18,6 +18,7 @@ const Projects = () => {
               title
               order
               summary
+              description
               tags
               thumbnail {
               childImageSharp {
@@ -33,7 +34,6 @@ const Projects = () => {
 );
 
 const projects = projectsList.allMdx.edges;
-
 
   return (
     <section className="container">
