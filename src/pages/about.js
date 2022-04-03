@@ -27,13 +27,12 @@ const About = () => {
                 <header className="md:text-center"><h2 className="mt-0">Experience</h2></header>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <dl className="md:text-right">
-                    <dt className="font-header font-bold text-gray-600 text-2xl mb-2">Wood Mackenzie</dt>
-                    <dd className="font-bold text-lg">Senior Product Designer <br />Design Systems, <em>Jul 2019 - Present</em></dd>
+                    <dt className="font-header font-bold text-gray-600 text-2xl mb-2">Phoenix Group</dt>
+                    <dd className="font-bold text-lg">Senior Product Designer <br />Design Systems, <em>Jan 2022 - Present</em></dd>
                 </dl>
                 <dl >
-                    <dt className="font-header font-bold text-gray-600 text-2xl mb-2">Street Parking</dt>
-                    <dd className="font-bold text-lg">Product Designer <br />Design Systems, <em>April 2020 - Present</em></dd>
-
+                    <dt className="font-header font-bold text-gray-600 text-2xl mb-2">Wood Mackenzie</dt>
+                    <dd className="font-bold text-lg">Senior Product Designer <br />Design Systems, <em>Jul 2019 - Jan 2022</em></dd>
                 </dl>
                 <dl className="md:text-right">
                     <dt className="font-header font-bold text-gray-600  text-2xl mb-2">William Hill</dt>
@@ -42,7 +41,8 @@ const About = () => {
                     <dd className="font-bold text-lg">UX/UI Designer, <em>Oct 2011 - Dec 2014</em></dd>
                 </dl>
                 <dl>
-                    <dt className="font-header font-bold text-gray-600  text-2xl mb-2">Agencies</dt>
+                    <dt className="font-header font-bold text-gray-600  text-2xl mb-2">Other</dt>
+                    <dd className="font-bold text-lg">Product Designer <br />Design Systems, <em>April 2020 - Present</em></dd>
                     <dd className="font-bold text-lg">Crush, <em>Sep 2008 - Oct 2011</em></dd>
                     <dd className="font-bold text-lg">1st Class Media, <em>Aug 2006 - Aug 2008</em></dd>
                 </dl>
@@ -61,16 +61,21 @@ const About = () => {
 <StaticImage className="object-cover" src="../images/profile-photo.jpg" alt="Family photo returning to the UK" />
 
 
-<p>I'm now fortunate enough to be focused on building out the design system for <a href="https://www.woodmac.com/" target="_blank" rel="external" title="Wood Mackenzie">Wood Mackenzie</a>, one of the world's leading energy consultancies. By day I move between building out our design system site in Gatsby, documenting components in React &amp; MDX and transitioning our system from Sketch to Figma.</p>
+<p>I moved out of management back on to the tools building out the design system for <a href="https://www.woodmac.com/" target="_blank" rel="external" title="Wood Mackenzie">Wood Mackenzie</a>, one of the world's leading energy consultancies. The role had me move between building out our design system site in Gatsby, documenting components in React &amp; MDX and transitioning our system from Sketch to Figma.</p>
+
+<p>Currently I'm working on the build out of my second design system for <a href="https://www.thephoenixgroup.com/" target="_blank" rel="external" title="Phoenix Group">Phoenix Group</a>, the UK's largest long-term savings and retirement business. We are starting from the ground up on this system which will eventually be multi-brand and multi-platform.</p>
 
 <p>Throughout my career, I've always loved the technical side of digital design. I continue to build out small sites and side projects to keep my skills on point; you are more likely to find me in Codepen than Dribbble. Over the past two years I have been fortunate enough to provide my design skills to the fitness platform <a href="https://streetparking.com/" target="_blank" title="Street Parking Website" rel="external">Street Parking</a>. I was one of their users for two years prior, so getting to work on a project I use daily is a true passion project.</p>
 
 <p>Thanks for taking the time to check out my work, if you would like to discuss a project, <a href="https://www.linkedin.com/in/andrewcetnarskyj/" title="Andrew Cetnarskyj LinkedIn profile" target="_blank" rel="external">please get in touch via LinkedIn</a> or download my CV below.</p>
         </article>
         <div className="mt-8 mb-16 flex justify-center">
-            <a href="../AndrewCetnarskyjCVOct21.pdf" download className="bg-primary-500 text-white rounded-full p-8 hover:bg-primary-700 hover:text-white hover:shadow-lg ">
+            <div className="grid grid-flow-row gap-2">
+            <a href="../AndrewCetnarskyjCVMar22.pdf" download className="bg-primary-500 text-white rounded-full p-8 hover:bg-primary-700 hover:text-white hover:shadow-lg ">
                 <RiFileDownloadLine size="4em" />
             </a>
+            <div className="italic text-center">3.4 MB PDF</div>
+            </div>
         </div>
         </section>
         </>
