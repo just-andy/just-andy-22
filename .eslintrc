@@ -1,24 +1,17 @@
 {
-  "extends": [ "wesbos/typescript" ],
-    "rules": {
-      "react/jsx-filename-extension": [2, { "extensions": [".js", ".jsx"] }],
-      "no-console": 2,
-      "prettier/prettier": [
-        "error",
-        {
-          "trailingComma": "es5",
-          "singleQuote": true,
-          "printWidth": 120,
-          "tabWidth": 4
-        }
-      ]
-    },
-    "settings": {
-      "import/resolver": {
-        "node": {
-          "paths": ["src"],
-          "extensions": [".js", ".jsx"]
-        }
+  "extends": ["wesbos/typescript"],
+  "rules": {
+    "no-console": 2,
+    "no-use-before-define": "off",
+    "@typescript-eslint/no-use-before-define": ["error"],
+    "prettier/prettier": [
+      "error",
+      {
+        "trailingComma": "es5",
+        "singleQuote": true,
+        "printWidth": 120,
+        "tabWidth": 4
       }
-    }
+    ]
   }
+}
