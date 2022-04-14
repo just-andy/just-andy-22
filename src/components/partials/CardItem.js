@@ -13,7 +13,7 @@ const CardItem = (props) => {
                         className="rounded-xl hover:shadow-lg tile-image"
                         imgStyle={{ borderRadius: '0.75em' }}
                         image={image}
-                        alt={`${props.name} Thumbnail}`}
+                        alt={`${props.name} Thumbnail`}
                     />
                
                 <div className="tile-content">

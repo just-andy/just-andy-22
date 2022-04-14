@@ -68,8 +68,8 @@ const About = () => {
 <p>Thanks for taking the time to check out my work, if you would like to discuss a project, <a href="https://www.linkedin.com/in/andrewcetnarskyj/" title="Andrew Cetnarskyj LinkedIn profile" target="_blank" rel="external">please get in touch via LinkedIn</a> or download my CV below.</p>
         </article>
         <div className="mt-8 mb-16 flex justify-center">
-            <a href="../AndrewCetnarskyjCVOct21.pdf" download className="bg-primary-500 text-white rounded-full p-8 hover:bg-primary-700 hover:text-white hover:shadow-lg ">
-                <RiFileDownloadLine size="4em" />
+            <a href="../AndrewCetnarskyjCVOct21.pdf" title="Andrew Cetnarskyj CV" download className="bg-primary-500 text-white rounded-full p-8 hover:bg-primary-700 hover:text-white hover:shadow-lg ">
+                <RiFileDownloadLine size="4em" alt="Download Icon" />
             </a>
         </div>
         </section>

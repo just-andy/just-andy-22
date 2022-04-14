@@ -30,14 +30,7 @@ module.exports = {
         ],
     },
     plugins: [
-        {resolve: `gatsby-plugin-sharp`,
-          options: {
-            defaults: {
-              className: 'rounded-xl',
-              imgClassName: 'rounded-xl'
-            }
-          }
-        },
+        `gatsby-plugin-sharp`,
         `gatsby-plugin-image`,
         `gatsby-plugin-netlify`,
         `gatsby-plugin-react-helmet`,

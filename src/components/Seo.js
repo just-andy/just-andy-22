@@ -27,7 +27,9 @@ const Seo = ({ title, description, image, pathname, article }) => (
 
             return (
                 <>
-                    <Helmet title={Seo.title} titleTemplate={titleTemplate}>
+                    <Helmet title={Seo.title} titleTemplate={titleTemplate} htmlAttributes={{
+    lang: 'en',
+  }}>
                         <meta name="description" content={Seo.description} />
                         <meta name="keywords" content="Andrew Cetnarskyj, Product Designer, UX, UI, Design Systems" />
                         <meta name="image" content={Seo.image} />

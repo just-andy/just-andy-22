@@ -21,7 +21,7 @@ const Footer = () => {
     return (
         <>
         <div className="flex justify-center my-8 md:my-12">
-            <button onClick={() => scrollTo('#top')} className="text-2xl block p-3 rounded-full bg-gray-200 text-primary-500 md:p-3 md:text-xl hover:bg-primary-700 hover:text-white hover:shadow-md"><RiArrowUpLine /></button>
+            <button alt="Back to top" onClick={() => scrollTo('#top')} className="text-2xl block p-3 rounded-full bg-gray-200 text-primary-500 md:p-3 md:text-xl hover:bg-primary-700 hover:text-white hover:shadow-md"><RiArrowUpLine alt="Back to top" /></button>
         </div>
         <footer className="flex flex-col p-6 justify-items-center flex-col-reverse bg-white md:flex-row md:justify-between border-t-2 border-gray-200">
             <div className="flex flex-col text-center md:items-center md:flex-row md:text-left md:w-6/12"><div>&copy; Andrew Cetnarskyj {new Date().getFullYear()}</div><div className="ml-0 md:ml-2">Built with <a className="secondary-link underline" href="https://www.gatsbyjs.com/" rel="external nofollow noopener noreferrer" target="_blank" >Gatsby</a> &amp;, <a className="secondary-link underline" href="https://www.netlify.com/" rel="external nofollow noopener noreferrer" target="_blank">Netlify</a> &amp; <a className="secondary-link underline" href="https://tailwindcss.com/" rel="external nofollow noopener noreferrer" target="_blank" >Tailwind</a></div></div>
@@ -43,16 +43,12 @@ const getIcon = (icon) => {
     switch (icon) {
         case 'RiLinkedinBoxLine':
         return <RiLinkedinBoxLine className="text-4xl" />
-        break;
         case 'RiTwitterLine':
         return <RiTwitterLine className="text-4xl" />
-        break;
         case 'RiGithubLine':
         return <RiGithubLine className="text-4xl" />
-        break;
         case 'RiInstagramLine':
         return <RiInstagramLine className="text-4xl" />
-        break;
         default:
             return null
     }
