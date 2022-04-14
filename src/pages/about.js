@@ -71,7 +71,7 @@ const About = () => {
         </article>
         <div className="mt-8 mb-16 flex justify-center">
             <div className="grid grid-flow-row gap-2">
-            <a href="../AndrewCetnarskyjCVMar22.pdf" download className="bg-primary-500 text-white rounded-full p-8 hover:bg-primary-700 hover:text-white hover:shadow-lg ">
+            <a href="../AndrewCetnarskyjCVMar22.pdf"  title="Andrew Cetnarskyj CV" download className="bg-primary-500 text-white rounded-full p-8 hover:bg-primary-700 hover:text-white hover:shadow-lg ">
                 <RiFileDownloadLine size="4em" />
             </a>
             <div className="italic text-center">3.4 MB PDF</div>
