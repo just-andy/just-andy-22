@@ -11,6 +11,22 @@ import Seo from '../components/Seo';
 
 const shortcodes = { Blockquote, ImageText, StatCounter, Gallery };
 
+interface ProjectTemplateProps {
+    data: {
+        mdx: {
+            frontmatter: {
+                title: string;
+                strapline: string;
+                banner: any;
+                tags: string[];
+                summary: string;
+                description: string;
+            };
+            body: any;
+        };
+    };
+}
+
 const ProjectsTemplate = ({
     data: {
         mdx: {
@@ -18,7 +34,7 @@ const ProjectsTemplate = ({
             body,
         },
     },
-}) => {
+}: ProjectTemplateProps) => {
     const image = getImage(banner);
 
     return (
