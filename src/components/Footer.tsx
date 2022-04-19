@@ -35,10 +35,11 @@ const Footer = () => {
             <div className="flex justify-center my-8 md:my-12">
                 <button
                     type="button"
+                    alt="Return to top"
                     onClick={() => scrollTo('#top')}
                     className="text-2xl block p-3 rounded-full bg-gray-200 text-primary-500 md:p-3 md:text-xl hover:bg-primary-700 hover:text-white hover:shadow-md"
                 >
-                    <RiArrowUpLine />
+                    <RiArrowUpLine alt="Up Arrow" />
                 </button>
             </div>
             <footer className="flex flex-col p-6 justify-items-center flex-col-reverse bg-white md:flex-row md:justify-between border-t-2 border-gray-200">

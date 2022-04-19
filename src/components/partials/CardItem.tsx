@@ -11,7 +11,6 @@ interface CardProps {
 }
 
 const CardItem = ({ thumb, name, slug, description, summary }: CardProps) => {
-    console.log(thumb);
     const image = getImage(thumb);
 
     return (
@@ -33,11 +32,11 @@ const CardItem = ({ thumb, name, slug, description, summary }: CardProps) => {
                     </div>
                 </Link>
             </div>
-            <h3 className="my-0 ">
+            <h2 className="my-0 ">
                 <Link className="secondary-link" to={`/projects/${slug}`} title={`${name} Project`}>
                     {name}
                 </Link>
-            </h3>
+            </h2>
             <p className="mb-3 md:mb-0 lg:text-xl ">{summary}</p>
         </div>
     );
